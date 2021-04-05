@@ -1,0 +1,65 @@
+/* DO NOT EDIT CODE BELOW */
+/* DO NOT EDIT CODE BELOW */
+/* DO NOT EDIT CODE BELOW */
+
+@font-face {
+  font-family: Menlo;
+  src: url('./Menlo-Regular.ttf');
+}
+
+* {
+  font-family: Menlo;
+  background-color: black;
+  color: #149414;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+p {
+  color: white;
+}
+
+h2 {
+  border: #149414 1px solid;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.section-heading {
+  color: white;
+  border: none;
+  padding: 0;
+}
+
+.code-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.snippet {
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 5px;
+  width: 25vw;
+  margin: 15px;
+}
+
+.code-hold {
+  display: flex;
+}
+
+.code-word,
+.code-snippet {
+  margin: 0;
+}
+
+.code-snippet {
+  background-color: darkslategrey;
+
+  padding: 0 15px;
+}
+
+/* DO NOT EDIT CODE ABOVE */
+/* DO NOT EDIT CODE ABOVE */
+/* DO NOT EDIT CODE ABOVE */

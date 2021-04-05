@@ -1,0 +1,56 @@
+html {
+  background-color: black;
+}
+
+body {
+  margin: 5px 45px;
+  background-color: white;
+}
+
+img {
+  width: 125px;
+  height: 125px;
+}
+
+/* Top Section **************************/
+#top-section {
+  background-color: rgba(218, 85, 85, 0.794);
+}
+
+h1,
+.nav {
+  display: inline-block;
+  margin: 55px 15px 20px;
+  font-size: 1.5em;
+}
+
+h2 {
+  clear: both;
+}
+
+/* Middle Section  **********************/
+#middle-section {
+  margin: 10px 10px;
+  border: 5px dotted black;
+}
+
+#mid-content,       /* combine with bottom section id */
+#bottom-content {
+  margin: 15px 15px;
+}
+
+#img-html {
+  float: left;
+  margin-right: 15px;
+}
+
+/* Bottom Section  **********************/
+#bottom-section {
+  margin: 15px 10px 50px;
+  border: 5px dotted black;
+}
+
+#img-css {
+  float: right;
+  margin-left: 15px;
+}

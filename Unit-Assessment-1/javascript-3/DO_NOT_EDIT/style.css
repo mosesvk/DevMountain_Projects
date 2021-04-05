@@ -1,0 +1,49 @@
+/* DO NOT EDIT CODE BELOW */
+/* DO NOT EDIT CODE BELOW */
+/* DO NOT EDIT CODE BELOW */
+body {
+  font-family: 'Nunito', sans-serif;
+  background: rgb(250, 250, 250);
+}
+#grocery-list-title,
+#grocery-status {
+  text-align: center;
+}
+.grocery-list-container {
+  width: 440px;
+  margin: 0 auto;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 2px 3px 1px 0px #eee;
+  background: #fff;
+}
+.red-line {
+  height: 100%;
+  border: 1px solid rgba(255, 0, 0, 0.788);
+  position: absolute;
+  left: 80px;
+}
+.input-container {
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#grocery-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 3px 3px 3px 95px;
+  border-top: 1px solid rgba(89, 89, 211, 0.459);
+  font-family: 'Permanent Marker', cursive;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+/* DO NOT EDIT CODE ABOVE */
+/* DO NOT EDIT CODE ABOVE */
+/* DO NOT EDIT CODE ABOVE */

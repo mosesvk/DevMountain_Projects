@@ -1,0 +1,181 @@
+html {
+  background-color: black;
+}
+
+body {
+  margin: 0 45px;
+  background-color: white;
+  height: 100%;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+p {
+  text-align: center;
+  margin-top: 3px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.712);
+}
+
+/************  Header      *************/
+
+#header {
+  background-color: turquoise;
+  height: 75px;
+}
+
+h1 {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+h2 {
+  margin: 10px 0 0 10px;
+}
+
+/************ Top Box     *************/
+
+#top-box {
+  border: 2px dotted black;
+  margin: 0 10px 10px 10px;
+  padding: 10px;
+}
+
+.square {
+  display: inline-block;
+}
+
+.square-1 {
+  height: 60px;
+  width: 125px;
+  background-color: rgb(92, 25, 92);
+}
+
+.square-2 {
+  height: 60px;
+  width: 60px;
+  background-color: blue;
+  margin: 0 10px;
+  box-shadow: 5px 5px 5px 0px rgb(0 0 0 / 75%);
+}
+
+.square-3 {
+  height: 125px;
+  width: 125px;
+  background-color: rgb(221, 142, 184);
+  outline: 1px solid;
+}
+
+/************   Middle Box   *************/
+
+#middle-box {
+  border: 2px dotted black;
+  margin: 0 10px 10px 10px;
+  padding: 10px;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.circle-1 {
+  height: 65px;
+  width: 65px;
+  margin-bottom: 0;
+  margin-left: 24px;
+}
+
+.eyes {
+  height: 5px;
+  width: 5px;
+  margin: 15px 0 0 5px;
+  border: 8px solid black;
+  border-radius: 50%;
+  border-bottom: 0;
+  display: inline-block;
+}
+
+#carrot-img {
+  height: 15px;
+  width: 20px;
+  margin-left: 20px;
+  margin-top: 0;
+  border-radius: 50%;
+}
+
+.circle-2 {
+  height: 90px;
+  width: 90px;
+  margin-bottom: 0;
+  margin-left: 12px;
+}
+
+.buttons {
+  height: 5px;
+  width: 5px;
+  margin: 10px 0 0 35px;
+  border: 8px solid black;
+  border-radius: 50%;
+  border-bottom: 0;
+}
+
+.circle-3 {
+  height: 110px;
+  width: 110px;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+/************   Bottom Box   *************/
+
+#bottom-box {
+  border: 2px dotted black;
+  margin: auto 10px 10px 10px;
+}
+
+#tan-square {
+  height: 150px;
+  width: 160px;
+  background-color: rgb(235, 229, 208);
+  outline: 1px solid;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+#green-circle {
+  height: 120px;
+  width: 125px;
+  background-color: green;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.red-square {
+  height: 70px;
+  width: 70px;
+  background-color: rgb(153, 53, 53);
+  box-sizing: border-box;
+  margin-left: 20px;
+  position: relative;
+  top: 20px;
+  left: 5px;
+}
+
+.blue-circle {
+  height: 52px;
+  width: 52px;
+  background-color: blue;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+#fish-img {
+  height: 20px;
+  width: 20px;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-radius: 50%;
+
