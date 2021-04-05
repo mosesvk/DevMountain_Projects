@@ -15,11 +15,18 @@ class Form extends Component {
   }
 
   submit() {
-    axios.post('/api/post', this.state)
-      .then(() => 'replace this string with something useful')
+    axios.post('/api/post', {...this.state})
+      .then(res => {
+        console.log('hi')
+        this.props.history.push('/dash')
+    })
       .catch((err) => console.log(err))
   }
-  
+
+  // submit(){
+  //   console.log('submit')
+  // }
+
   render() {
     let imgSrc = this.state.img ? this.state.img : noImage;
 
