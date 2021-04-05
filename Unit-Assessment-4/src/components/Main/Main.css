@@ -1,0 +1,72 @@
+/* import styled from 'styled-components';
+import ImgBg from '../../images/CFP-cover.jpg'; */
+
+.MainContainer {
+  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url('../../images/CFP-cover.jpg') ;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.MainContent {
+  height: calc(100vh - 80px);
+  max-height: 100%;
+  /* width: 100vw; */
+  padding: 0rem calc((100vw - 1300px) /2);
+}
+
+
+.MainItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  max-height: 100%;
+  padding: 0 2rem;
+  width: 650px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: bold;
+}
+  
+@media screen and (max-width: 650px) {
+  .MainItems {
+    width: 100%;
+  }
+}
+
+
+.MainImg {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  /* box-shadow: 3px 5px white; */
+  /* letter-spacing: 3px; */
+  /* background: url('../../images/CFP-cover.jpg') */
+}
+
+.MainP {
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  margin-bottom: 2rem;
+}
+
+.MainBtn {
+  font-size: 1.4rem;
+  padding: 1rem 4rem; 
+  border: none;
+  background: tan;
+  color: black;
+  transition: .2s ease-out;
+}
+
+.MainBtn:hover {
+  background: gray;
+  transition: .2s ease-out;
+  cursor: pointer; 
+  color: #000;
+}
+
+

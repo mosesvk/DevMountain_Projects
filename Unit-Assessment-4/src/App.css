@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+.cartItem {
+  margin-top: 55px;
+  margin-left: 15px;
+}
+
+.input {
+  font-size: 20px
+}
+
+.toast {
+  font-size: 25px;
+}
