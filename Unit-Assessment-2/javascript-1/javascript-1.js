@@ -63,13 +63,13 @@ const animalsCopy = [...animals, ...newValue]
 
 //CODE HERE
 
-let compareNums = (num1, num2) => {
+const compareNums = (num1, num2) => {
     if (num1 > num2){
         return num1
     }
     return num2
 }
-  
+
 ////////////////////PROBLEM 5////////////////////
 /*
     Write a one line arrow function called 'bestMovie' that takes in one parameter,
@@ -80,8 +80,8 @@ let compareNums = (num1, num2) => {
 */
 
 //CODE HERE
-  const bestMovie = movie => `${movie} is the best movie ever!`;
-  
+const bestMovie = (movie) => `${movie} is the best movie ever!`;
+
 ////////////////////PROBLEM 6////////////////////
 /*
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
@@ -350,13 +350,13 @@ function Phone(brand, model, storage, color, sold){
     - sold, this should be false for each phone
 */
 
-//CODE HERE
-  let phone1 = new Phone('t-mobile', 'iphone10', 32, 'pink', false)
+//CODE HEREf
+let phone1 = new Phone('t-mobile', 'iphone10', 32, 'pink', false)
 
-  let phone2 = new Phone('verizon', 'iphone11', 16, 'red', false)
-  
-  let phone3 = new Phone('att', 'iphone10', 8, 'green', false)
-  
+let phone2 = new Phone('verizon', 'iphone11', 16, 'red', false)
+
+let phone3 = new Phone('att', 'iphone10', 8, 'green', false)
+
 /*
     Last, add a prototype method to Phone.
     Call the method 'sell'.
