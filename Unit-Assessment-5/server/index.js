@@ -42,7 +42,7 @@ massive({
   .then((db) => {
     app.set("db", db);
     app.listen(SERVER_PORT, () =>
-      console.log(` Da server running on ${SERVER_PORT} mon.`)
+      console.log(` This had better be running on ${SERVER_PORT} bruh.`)
     );
   })
   .catch((err) => console.log(err));
