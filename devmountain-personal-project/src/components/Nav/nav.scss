@@ -1,0 +1,26 @@
+
+
+.nav {
+  font-size: 24px;
+  padding: 25px 50px;
+  font-family: 'Crimson Text', serif;
+  border-bottom: solid 1px #222;
+  background: #143A56;
+  color: white;
+  height: 35px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.links {
+  margin-right: 50px;
+  text-decoration: none;
+  color: #fff;
+}
