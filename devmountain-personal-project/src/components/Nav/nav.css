@@ -1,21 +1,25 @@
-@import '../../variables';
-
 .nav {
   font-size: 24px;
   padding: 25px 50px;
   font-family: 'Crimson Text', serif;
   border-bottom: solid 1px #222;
-  background: black;
+  background: #143A56;
   color: white;
   height: 35px;
 }
 
 .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -24,3 +28,4 @@
   text-decoration: none;
   color: #fff;
 }
+/*# sourceMappingURL=nav.css.map */
