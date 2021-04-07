@@ -7,14 +7,20 @@
   border-bottom: solid 1px #222;
   background: $primaryColor;
   color: white;
-  height: 35px;
+  height: 45px;
+  border: 10px solid black;
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
+.nav-logo {
+
+}
 
 
 .nav-links {
@@ -23,6 +29,7 @@
 
 .links {
   margin-right: 50px;
+  font-size: 18px;
   text-decoration: none;
   color: #fff;
 }
