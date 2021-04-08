@@ -1,6 +1,11 @@
 @import '../../variables';
 
 .login-container {
-  background: purple;
+  background: #ce6fce;
   height: 100vh;
+  text-align: center;
+}
+
+.login-wrap {
+  padding: 50px;
 }

@@ -4,7 +4,7 @@ import './register.scss'
 const register = () => {
   return (
     <div className='register-container'>
-      
+
     </div>
   )
 }
