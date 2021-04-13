@@ -4,11 +4,10 @@
   font-size: 24px;
   padding: 25px 50px;
   font-family: 'Montserrat', sans-serif;
-  border-bottom: solid 1px #222;
-  background: $primaryColor;
+  background: #474545;
   color: white;
-  height: 45px;
-  border: 10px solid black;
+  height: 85px;
+  // border: 10px solid black;
 }
 
 .nav-container {
@@ -19,21 +18,60 @@
 }
 
 .nav-logo {
- font-size: 45px;
- 
- @media (max-width: 940px){
-   font-size: 30px;
- }
+  font-size: 45px;
+
+  @media (max-width: 940px){
+    font-size: 30px;
+  }
 }
 
-
-.nav-links {
+.nav-social-wrap {
   display: flex;
+  justify-content: flex-end;
+  padding-bottom: 8px;
+}
+
+.social-links, 
+.social-links:visited {
+  font-size: 14px;
+  margin-right: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icons {
+  font-size: 20px;
+}
+
+.nav-links-wrap {
+  display: flex;
+  align-items: baseline;
 }
 
 .links {
-  margin-right: 30px;
-  font-size: 18px;
+  padding: 0 20px;
+  font-size: 22px;
   text-decoration: none;
   color: #fff;
+  // transform: skew(-10deg);
+
+  &:hover{
+    font-weight: 800;
+  }
+}
+
+.link-box {
+  background-color: $primaryLightColor;
+  color: $primaryColor;
+  padding: 25px;
+  font-weight: 800;
+  margin-right: 10px;
+  // width: 100px;
+  // height: 100px;
+  transform: skew(-10deg);
+}
+
+#join-box {
+  background: $secondaryColor;
+  color: $primaryLightColor
 }

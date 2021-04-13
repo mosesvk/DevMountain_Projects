@@ -27,7 +27,6 @@ const Login = (props) => {
         <input placeholder='Password' onChange={(e) => setPassword(e.target.value)} value={password}/>
         <button onClick={loginUser}>Login</button>
         <button>Not a User?</button>
-        {/* <Link path='/register' component={Register}>REGISTER</Link> */}
       </div>
     </div>
   )
