@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
 const user = require('./controllers/userCtrl')
-const program = require('./controllers/programCtrl')
+// const program = require('./controllers/programCtrl')
 const massive = require('massive')
 
 
@@ -19,7 +19,7 @@ app.use(session({
 app.post('/auth/login', user.login)
 app.post('/auth/register', user.register)
 app.get('/auth/logout', user.logout)
-// app.put('/auth/:username', user.userUpdate)
+app.put('/auth/:username', user.userUpdate) 
 // app.delete('/auth/:id', user.deleteUser)
 
 // app.use((req, res, next) => {

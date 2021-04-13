@@ -37,7 +37,7 @@ module.exports = {
     req.session.destroy();
     return res.sendStatus(200)
   },
-  userData: async(req, res) => {
+  userUpdate: async(req, res) => {
     const { user } = req.session;
     if (user) return res.status(200).send({ loggedIn: true, user });
     else return res.sendStatus(401)
