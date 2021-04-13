@@ -14,3 +14,4 @@ VALUES
   ${email},
   ${hash}
 )
+returning *;
