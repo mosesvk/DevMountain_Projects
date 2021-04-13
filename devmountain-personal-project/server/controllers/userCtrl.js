@@ -35,7 +35,7 @@ module.exports = {
 },
   logout: async(req, res) =>  {
     req.session.destroy();
-    res.redirect('http://localhost:3000')
+    return res.sendStatus(200)
   },
   userData: async(req, res) => {
     const { user } = req.session;
