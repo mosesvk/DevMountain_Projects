@@ -15,6 +15,12 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  @media screen and (min-width: 1650px){
+    padding: 0 10rem;
+  }
+  @media screen and (min-width: 1500px){
+    padding: 0 6rem;
+  }
 }
 
 .nav-logo {
@@ -25,7 +31,8 @@
   }
 }
 
-.nav-social-wrap {
+.nav-social-wrap, 
+.nav-social-wrap:visited {
   display: flex;
   justify-content: flex-end;
   padding-bottom: 8px;
