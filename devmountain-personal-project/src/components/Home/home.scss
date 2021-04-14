@@ -1,7 +1,7 @@
 @import '../../variables';
 
 .top-container {
-  background: linear-gradient(to right, #4292ee00, #474545ea), url("../../images/tuni-byu.jpg") center;
+  background: linear-gradient(to left, #4292ee00, #474545f5), url("../../images/byu-fb.jpg") center;
   background-size: cover;
   height: 80vh;
 }
@@ -11,7 +11,7 @@
   /* max-width: 1200px; */
   position: absolute;
   top: 20%;
-  left: 42%;
+  right: 35%;
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
@@ -19,9 +19,12 @@
 }
 
 .top-h1 {
+  background-color: $secondaryColor;
+  transform: skew(-10deg);
   color: $primaryLightColor;
   font-size: 5rem;
-  margin: 0;
+  font-weight: 800;
+  margin-bottom: 10px;
   letter-spacing: -2px;
 }
 

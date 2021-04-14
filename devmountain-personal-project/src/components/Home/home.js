@@ -8,7 +8,7 @@ const home = () => {
     <div>
       <div className="top-container" >
         <div className="top-wrap">
-          <h1 className="top-h1">GET READY TO</h1>
+          <h1 className="top-h1">BE READY TO</h1>
           <div className="top-text-box">
             <Carousel controls={false} indicators={false} >
               <Carousel.Item interval={1500}>
