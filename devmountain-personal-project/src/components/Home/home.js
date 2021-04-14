@@ -6,7 +6,10 @@ const home = () => {
     <div>
       <div className="top-container">
         <div className="top-wrap">
-          <h1>GET READY</h1>
+          <h1>GET READY TO</h1>
+          <div className="top-text-box">
+            <h1>WORK</h1>
+          </div>
         </div>
       </div>
       <div className="mid-container">
