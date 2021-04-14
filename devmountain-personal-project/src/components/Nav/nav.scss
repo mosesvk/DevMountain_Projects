@@ -40,7 +40,7 @@
 .nav-bars {
   display: none;
 
-  @media screen and (max-width: 1250px){
+  @media screen and (max-width: 1300px){
     display: flex;
     color: $primaryLightColor;
     justify-content: flex-end;
