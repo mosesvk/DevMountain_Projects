@@ -1,0 +1,42 @@
+@import '../../variables';
+
+.sidebar-container {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 70%;
+  background: #1e212d;
+  display: grid;
+  align-items: center;
+  top: 0;
+  left: 0;
+  transition: .3s ease-in-out;
+  // opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+  // top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+}
+
+.icon-wrap {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  background: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidebar-wrap {
+  color: $primaryLightColor
+}
+
+.sidebar-menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 80px);
+  text-align: center;
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    grid-template-rows: repeat(6, 60px);
+  }
+}
