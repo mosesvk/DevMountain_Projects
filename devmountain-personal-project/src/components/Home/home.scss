@@ -40,6 +40,32 @@
   text-align: center;
 }
 
+/// Mid-Container ///
+
 .mid-container {
   height: 80vh;
+}
+
+.mid-wrap {
+  padding: 3rem 8rem;
+  width: 100%;
+  text-align: center;
+  // height: 100%;
+}
+
+.mid-wrap-info {
+  h1 {
+    padding: 1rem 0;
+    font-weight: 700;
+    color: $secondaryColor;
+  }
+}
+
+.mid-img
+{
+  margin-top: 5rem;
+  width: 25rem!important;
+  height: 25rem!important;
+  border-radius: 30px;
+  align-self: center;
 }
