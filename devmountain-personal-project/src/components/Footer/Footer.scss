@@ -2,5 +2,24 @@
 
 .footer-container {
   background: #474545;
-  height: 5rem;
+  height: 10rem;
+  
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  height: 100%
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
 }
