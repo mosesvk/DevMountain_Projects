@@ -1,7 +1,7 @@
 @import '../../variables';
 
 .top-container {
-  background: linear-gradient(to right, #4292ee00, #474545da), url("../../images/tuni-byu.jpg") center;
+  background: linear-gradient(to right, #4292ee00, #474545ea), url("../../images/tuni-byu.jpg") center;
   background-size: cover;
   height: 80vh;
 }
@@ -77,16 +77,20 @@
 
   h1 {
     color: $primaryLightColor;
+    text-align: left;
     font-size: 3rem;
     margin: 0;
     letter-spacing: -2px;
+    margin-bottom: 10px;
   }
 }
 
 .top-join {
   display: block;
+  padding: 10px 0;
   width: 50%;
   font-size: 1.5rem;
+  font-weight: 700;
   background-color: $primaryLightColor;
   color: $secondaryColor;
 }
