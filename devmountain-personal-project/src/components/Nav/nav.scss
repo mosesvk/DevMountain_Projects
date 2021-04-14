@@ -36,6 +36,7 @@
 
 .nav-logo {
   font-size: 45px;
+  font-weight: 900;
 
   @media (max-width: 940px){
     font-size: 30px;
@@ -59,6 +60,7 @@
   display: flex;
   justify-content: flex-end;
   padding-bottom: 8px;
+  align-items: baseline;
 }
 
 .social-links, 

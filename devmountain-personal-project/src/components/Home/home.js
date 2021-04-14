@@ -7,17 +7,17 @@ const home = () => {
     <div>
       <div className="top-container" >
         <div className="top-wrap">
-          <h1>GET READY TO</h1>
+          <h1 className="top-h1">GET READY TO</h1>
           <div className="top-text-box">
             <Carousel controls={false} indicators={false} >
-              <Carousel.Item interval={1500}>
-                <h1>WORK</h1>
+              <Carousel.Item class="carousel-item" interval={1500}>
+                <h1 className="top-carousel-h1">WORK</h1>
               </Carousel.Item>
-              <Carousel.Item interval={1500}>
-                <h1>DOMINATE</h1>
+              <Carousel.Item class="carousel-item" interval={1500}>
+                <h1 className="top-carousel-h1">DOMINATE</h1>
               </Carousel.Item>
-              <Carousel.Item interval={1500}>
-                <h1>PUSH</h1>
+              <Carousel.Item class="carousel-item" interval={1500}>
+                <h1 className="top-carousel-h1">PUSH</h1>
               </Carousel.Item>
             </Carousel>
           </div>

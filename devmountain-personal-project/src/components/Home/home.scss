@@ -16,12 +16,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  h1 {
-    color: $primaryLightColor;
-    font-size: 5rem;
-    margin: 0;
-  }
+.top-h1 {
+  color: $primaryLightColor;
+  font-size: 5rem;
+  margin: 0;
+  letter-spacing: -2px;
+}
+
+.top-carousel-h1 {
+  color: $primaryLightColor;
+  font-size: 5rem;
+  font-weight: 800;
+  margin: 0;
 }
 
 .top-text-box {
@@ -29,6 +37,7 @@
   width: 30rem;
   height: 7rem;
   transform: skew(-10deg);
+  text-align: center;
 }
 
 .mid-container {
