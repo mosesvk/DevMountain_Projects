@@ -1,6 +1,7 @@
 @import '../../variables';
 
 .nav {
+  display: block!important;
   font-size: 24px;
   padding: 25px 50px;
   font-family: 'Montserrat', sans-serif;
@@ -10,6 +11,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  box-sizing: content-box;
   // border: 10px solid black;
 }
 
@@ -106,6 +108,8 @@
 
   &:hover{
     font-weight: 800;
+    text-decoration: none;
+    color: #fff;
   }
 }
 
