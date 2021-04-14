@@ -13,7 +13,7 @@ function App() {
 
   return (
     <HashRouter>
-      <Nav />
+      <Nav toggle={toggle}/>
       {routes}
     </HashRouter>
   );

@@ -15,11 +15,17 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  @media screen and (min-width: 1650px){
-    padding: 0 10rem;
+  @media (max-width: 2250px){
+    padding: 0 14rem;
   }
-  @media screen and (min-width: 1500px){
+  @media (max-width: 1800px){
+    padding: 0 8rem;
+  }
+  @media (max-width: 1650px){
     padding: 0 6rem;
+  }
+  @media (max-width: 1500px){
+    padding: 0 2rem;
   }
 }
 
@@ -57,7 +63,7 @@
   text-decoration: none;
   color: #fff;
 
-  @media screen and (max-width: 1250px){
+  @media screen and (max-width: 1300px){
     margin: 0;
     padding-bottom: 20px;
   }
@@ -65,7 +71,7 @@
 
 .phone-size-link {
 
-  @media screen and (max-width: 1250px){
+  @media screen and (max-width: 1300px){
     padding-left: 20px;
 
   }
@@ -74,7 +80,7 @@
 .social-icons {
   font-size: 20px;
 
-  @media screen and (max-width: 1250px){
+  @media screen and (max-width: 1300px){
     display: none;
   }
 }
@@ -83,7 +89,7 @@
   display: flex;
   align-items: baseline;
 
-  @media screen and (max-width: 1250px){
+  @media screen and (max-width: 1300px){
     display: none
   }
 }
