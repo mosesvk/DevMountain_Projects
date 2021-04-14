@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
+import {Link} from 'react-router-dom'
 import './home.scss'
 
 const home = () => {
@@ -20,6 +21,10 @@ const home = () => {
                 <h1 className="top-carousel-h1">PUSH</h1>
               </Carousel.Item>
             </Carousel>
+          </div>
+          <div className="top-join-wrap">
+            <h1>TRY FIRST SESSION FOR FREE</h1>
+            <Link className="top-join">JOIN</Link>
           </div>
         </div>
       </div>

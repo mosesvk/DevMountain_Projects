@@ -69,3 +69,24 @@
   border-radius: 30px;
   align-self: center;
 }
+
+.top-join-wrap {
+  padding-top: 10rem;
+  width: 70%;
+  text-align: center;
+
+  h1 {
+    color: $primaryLightColor;
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: -2px;
+  }
+}
+
+.top-join {
+  display: block;
+  width: 50%;
+  font-size: 1.5rem;
+  background-color: $primaryLightColor;
+  color: $secondaryColor;
+}
