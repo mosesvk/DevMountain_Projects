@@ -1,29 +1,27 @@
 @import '../../variables';
 
-// .register-container {
-//   background: linear-gradient(to right, #3484e7, #474545a9);
-//   height: 80vh;
-// }
+.register-container {
+  background: linear-gradient(to right, #3484e7, #474545a9);
+  height: 80vh;
+  align-content: center;
+}
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 
-$background: #FBFBFB;
-$blue: #3498db;
 
-.container {
-	position: absolute;
-	top: 0;
-	left: 0;
+.register-wrap {
+	// position: absolute;
+	// top: 0;
+	// left: 0;
+  background: white;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	background: #2c3e50;
 	background-size: cover;
 	.box#sign-up {
 		box-sizing: border-box;
 		width: 440px;
 		margin: 40px auto;
-		background: $background;
 		border-radius: 2px;
 		box-shadow: 0 1px 20px 5px rgba(0,0,0,0.4);
 		padding: 15px 35px;
@@ -43,16 +41,15 @@ $blue: #3498db;
 				.square {
 					position: absolute;
 					left: 9px;
-					background: $background;
 					width: 40px;
 					height: 40px;
-					border: 3px solid $blue;
+					border: 3px solid black;
 					border-radius: 8px;
 					transform: rotateX(55deg) rotateZ(45deg);
 					box-shadow: 3px 3px 0px 2px white;
 					-webkit-backface-visibility: hidden;
 					&:nth-of-type(1) {
-						background: $blue;
+						background: black;
 						top: 0;
 						z-index: 99;
 					}
@@ -97,58 +94,16 @@ $blue: #3498db;
 					}
 				}
 			}
-			.checkbox {
+			.reg-sign-up {
 				margin: 5px 0;
-				.checkbox-label {
-					position: relative;
-					display: table;
-					width: 16px;
-					height: 16px;
-					background: white;
-					border: 1px solid #CCC;
-					border-radius: 2px;
-					float: left;
-					margin: 5px 5px 5px 0;
-				}
-				input[type="checkbox"] {
-					display: none;
-					&:checked ~ label.checkbox-label {
-						&:before {
-							content: "";
-							position: absolute;
-							top: 7px;
-							left: 5px;
-							height: 3px;
-							width: 10px;
-							background: $blue;
-							transform: rotate(-45deg);
-						}
-						&:after {
-							content: "";
-							position: absolute;
-							top: 5px;
-							left: 3px;
-							height: 6px;
-							width: 3px;
-							background: $blue;
-							transform: rotate(-45deg);
-						}
-					}
-				}
-				label.description {
-					float: left;
-					margin: 3px 0;
-					color: #333;
-					a {
-						text-decoration: none;
-						color: #5AA4EC;
-						font-weight: 600;
-					}
-				}
+        display: flex;
+        p {
+          margin-right: 5px;
+        }
 			}
 			button {
 				width: 100%;
-				background: $blue;
+				background: black;
 				line-height: 40px;
 				border: 0;
 				outline: 0;
