@@ -13,10 +13,10 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-wrap">
         <div>
-          <Link className="footer-link">HOME</Link>
-          <Link className="footer-link">CONTACT</Link>
-          <Link className="footer-link">LOGIN</Link>
-          <Link className="footer-link">JOIN</Link>
+          <Link className="footer-link" to="/">HOME</Link>
+          <Link className="footer-link" to="/contact">CONTACT</Link>
+          <Link className="footer-link" to="/login">LOGIN</Link>
+          <Link className="footer-link" to="/register">JOIN</Link>
         </div>
         <p> Copyright &copy; Moses Kaumatule</p>
         <div>

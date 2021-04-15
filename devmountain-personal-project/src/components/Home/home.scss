@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
   @media (max-width: $tablet) {
     position: relative;
@@ -52,8 +53,12 @@
       height: 5.5rem;
     }
     @media (max-width: $tablet) {
-      width: 25rem;
+      width: 18rem;
       height: 4rem;
+    }
+    @media (max-width: $phone) {
+      width: 18rem;
+      height: 3.5rem;
     }
   
     .top-carousel-h1 {
@@ -97,7 +102,7 @@
 /// Mid-Container ///
 
 .mid-container {
-  // height: 80vh;
+  //
 }
 
 .mid-wrap {
@@ -106,16 +111,16 @@
   text-align: center;
   // height: 100%;
 
-  @media (max-width: 2250px){
+  @media (max-width: $monitor){
     padding: 3rem 14rem;
   }
-  @media (max-width: 1800px){
+  @media (max-width: $monitorMd){
     padding: 3rem 8rem;
   }
-  @media (max-width: 1650px){
+  @media (max-width: $monitorSm){
     padding: 3rem 6rem;
   }
-  @media (max-width: 1500px){
+  @media (max-width: $laptop){
     padding: 3rem 5rem;
   }
   @media (max-width: $laptopSm){
@@ -140,6 +145,9 @@
     padding: 1rem 0;
     font-weight: 700;
     color: $secondaryColor;
+    @media (max-width: $phone) {
+      font-size: 2rem;
+    }
   }
   h3 {
     font-weight: 600;

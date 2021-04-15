@@ -13,6 +13,9 @@
   z-index: 100;
   box-sizing: content-box;
   // border: 10px solid black;
+  @media(max-width: $laptopMd){
+    padding: 15px 15px;
+  }
 }
 
 .nav-container {
@@ -20,17 +23,20 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  @media (max-width: 2250px){
+  @media (max-width: $monitor){
     padding: 0 14rem;
   }
-  @media (max-width: 1800px){
+  @media (max-width: $monitorMd){
     padding: 0 8rem;
   }
-  @media (max-width: 1650px){
+  @media (max-width: $monitorSm){
     padding: 0 6rem;
   }
-  @media (max-width: 1500px){
+  @media (max-width: $laptop){
     padding: 0 2rem;
+  }
+  @media (max-width: $laptopMd){
+    padding: 0;
   }
 }
 
@@ -64,7 +70,7 @@
   align-items: flex-end;
 
   .nav-map-link {
-    @media (max-width: $laptopMd){
+    @media (max-width: $phone){
       display: none;
     }
   }
