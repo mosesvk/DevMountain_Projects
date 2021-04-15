@@ -1,12 +1,22 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 // import {Link} from 'react-router-dom'
 // import Register from '../Register/register'
+import {connect} from 'react-redux'
+import {updateUser} from '../../redux/userReducer'
 import axios from 'axios'
 import './login.scss'
 
 const Login = (props) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const {user} = props;
+  const {push} = props.history
+
+  useEffect(() => {
+    if (user){
+      push('/')
+    }
+  }, [user, push])
 
   const loginUser = () => {
     axios.post('/auth/login', {
@@ -15,10 +25,12 @@ const Login = (props) => {
     })
       .then(res => {
         console.log(res.data)
-        props.history.push('/')
+        props.updateUser(res.data)
       })
       .catch(err => console.log(err))
   }
+
+  // console.log(props)
 
   return (
     <div className='login-container'>
@@ -32,4 +44,10 @@ const Login = (props) => {
   )
 }
 
-export default Login
+const mapStateToProps = (stateRedux) => {
+  return {
+    user: stateRedux.userReducer.user
+  }
+}
+
+export default connect(mapStateToProps, {updateUser})(Login)

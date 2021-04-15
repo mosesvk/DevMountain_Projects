@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
+import axios from 'axios'
 import {
   FaFacebookSquare,
   FaLinkedin,
@@ -8,10 +9,20 @@ import {
   FaTwitterSquare,
   FaBars
 } from 'react-icons/fa';
+import {connect} from 'react-redux'
+import {updateUser} from '../../redux/userReducer'
 import './nav.scss'
 
-const nav = (props) => {
-  const { toggle } = props;
+const Nav = (props) => {
+  const { toggle, user, updateUser } = props;
+
+  useEffect(() => {
+    axios.get('/auth/getUser')
+      .then(res => {
+        updateUser(res.data)
+      })
+      .catch(err => console.log(err))
+  }, [updateUser])
 
   return (
     <div className="nav">
@@ -25,7 +36,11 @@ const nav = (props) => {
               <FaLocationArrow/>
               <Link className="social-links">Lehi, UT</Link>
             </a>
-            <Link className="social-links phone-size-link" to="/login">LOGIN</Link>
+            {user ? (
+              <p>{user.username}</p>
+            ) : (
+              <Link className="social-links phone-size-link" to="/login">LOGIN</Link>
+            )}
             <a href="https://twitter.com/kanuch78" target="_blank" rel="noreferrer" className="social-links social-icons"><FaTwitterSquare/></a>
             <a href="https://www.facebook.com/TuniK78" target="_blank" rel="noreferrer" className="social-links social-icons"><FaFacebookSquare/></a>
             <a href="https://www.instagram.com/t.kanuch78/?hl=en" target="_blank" rel="noreferrer" className="social-links social-icons"><FaInstagram/></a>
@@ -49,4 +64,10 @@ const nav = (props) => {
   )
 }
 
-export default nav
+const mapStateToProps = (stateRedux) => {
+  return {
+    user: stateRedux.userReducer.user
+  }
+}
+
+export default connect(mapStateToProps, {updateUser})(Nav)

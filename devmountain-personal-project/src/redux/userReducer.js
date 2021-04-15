@@ -1,35 +1,27 @@
-import axios from 'axios';
+// import axios from 'axios';
 
 const initialState = {
-  email: null, 
-  firstName: null, 
-  lastName: null
+  user: null
 }
 
-const REQUEST_USER_DATA = 'REQUEST_USER_DATA'
+const UPDATE_USER = 'UPDATE_USER'
 
-export const requestUserData = () => {
-  let data = axios.put('/auth/:username').then(res => res.data)
+// Action Builder
+export const updateUser = (user) => {
   return {
-    type: REQUEST_USER_DATA,
-    payload: data
+    type: UPDATE_USER,
+    payload: user
   }
 }
 
 export default function reducer(state = initialState, action) {
+  // console.log(action)
   switch (action.type) {
-    case REQUEST_USER_DATA + 
-    '_FULFILLED':
-      const {
-        email, 
-        firstName,
-        lastName
-      } = action.payload.user 
+    case UPDATE_USER: 
       return {
-        email, 
-        firstName,
-        lastName
-      };
+        ...state,
+        user: action.payload
+      }
     default: 
       return state;
   }

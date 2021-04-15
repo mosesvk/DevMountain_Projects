@@ -13,13 +13,16 @@ app.use(express.json());
 app.use(session({
   secret: SESSION_SECRET, 
   resave: false, 
-  saveUninitialized: false
+  saveUninitialized: false, 
+  cookie: {
+    maxAge: 1000 * 60 * 60 * 24,
+  }
 }))
 
 app.post('/auth/login', user.login)
 app.post('/auth/register', user.register)
 app.get('/auth/logout', user.logout)
-app.put('/auth/:username', user.userData) 
+app.get('/auth/getUser', user.userData) 
 // app.delete('/auth/:id', user.deleteUser)
 
 // app.use((req, res, next) => {
