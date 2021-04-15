@@ -43,6 +43,14 @@
   text-align: center;
 }
 
+.top-join {
+
+  &:hover {
+    text-decoration: none;
+    background-color: #eeeeeeb0;
+  }
+}
+
 /// Mid-Container ///
 
 .mid-container {

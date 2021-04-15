@@ -169,7 +169,19 @@
   transform: skew(-10deg);
 }
 
+#program-box {
+
+  &:hover {
+    color: $primaryColor;
+    background-color: #eeeeeeb0;
+  }
+}
+
 #join-box {
   background: $secondaryColor;
-  color: $primaryLightColor
+  color: $primaryLightColor;
+
+  &:hover {
+    background-color: #3484e7bf;
+  }
 }

@@ -58,7 +58,7 @@ const Nav = (props) => {
             <Link className="links" to="/">HOME</Link>
             <Link className="links" to="/about">ABOUT</Link>
             <Link className="links" to="/contact">CONTACT</Link>
-            <Link className="links link-box" to="/programs">PROGRAMS</Link>
+            <Link className="links link-box" id="program-box" to="/programs">PROGRAMS</Link>
             <Link className="links link-box" id="join-box" to="/register">JOIN</Link>
             {/* <Link className="links" to="/register">REGISTER</Link> */}
             
