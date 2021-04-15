@@ -7,7 +7,8 @@ import {
   FaInstagram,
   FaLocationArrow,
   FaTwitterSquare,
-  FaBars
+  FaBars,
+  FaUserAlt
 } from 'react-icons/fa';
 import {connect} from 'react-redux'
 import {updateUser} from '../../redux/userReducer'
@@ -38,9 +39,15 @@ const Nav = (props) => {
               <Link className="social-links">Lehi, UT</Link>
             </a>
             {user ? (
-              <p>{user.username}</p>
+              <div className="nav-login-active">
+                <div className="nav-user-icon">
+                  <FaUserAlt/>
+                  <p>{user.username}</p>
+                </div>
+                <a href="/home">LOGOUT</a>
+              </div>
             ) : (
-              <Link className="social-links phone-size-link" to="/login">LOGIN</Link>
+              <Link className="social-links phone-size-link login-link" to="/login">LOGIN</Link>
             )}
             <a href="https://twitter.com/kanuch78" target="_blank" rel="noreferrer" className="social-links social-icons"><FaTwitterSquare/></a>
             <a href="https://www.facebook.com/TuniK78" target="_blank" rel="noreferrer" className="social-links social-icons"><FaFacebookSquare/></a>

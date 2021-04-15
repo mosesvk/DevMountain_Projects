@@ -1,11 +1,88 @@
 @import '../../variables';
 
 .login-container {
-  background: #ce6fce;
-  height: 100vh;
+  background: linear-gradient(to right, #3484e7, #474545a9);
+  height: 80vh;
   text-align: center;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
+
 .login-wrap {
-  padding: 50px;
+	// position: absolute;
+	// top: 0;
+	// left: 0;
+  background: white;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-size: cover;
+	.box#sign-up {
+		box-sizing: border-box;
+		width: 440px;
+		margin: 40px auto;
+		border-radius: 2px;
+		box-shadow: 0 1px 20px 5px rgba(0,0,0,0.4);
+		padding: 15px 35px;
+		.back {
+			text-decoration: none;
+			line-height: 40px;
+			.back-arrow {
+				color: #777;
+			}
+		}
+		.brand {
+			.title {
+				font-weight: 400;
+				color: #333;
+				text-align: center;
+			}
+		}
+		.form {
+			input {
+				outline: 0;
+				border: 1px solid #CCC;
+				box-sizing: border-box;
+				padding: 8px;
+				color: #222;
+				border-radius: 4px;
+				width: 100%;
+				margin: 5px 0;
+				font-weight: 600;
+				&::-webkit-input-placeholder {
+					color: #AAA;
+					font-weight: 400;
+				}
+			}
+			.row {
+				input {
+					width: calc(50% - 5px);
+					float: left;
+					&:first-of-type {
+						margin-right: 10px;
+					}
+				}
+			}
+			.reg-sign-up {
+				margin: 5px 0;
+        display: flex;
+        p {
+          margin-right: 5px;
+        }
+			}
+			button {
+				width: 100%;
+				background: black;
+				line-height: 40px;
+				border: 0;
+				outline: 0;
+				color: white;
+				border-radius: 20px;
+				font-weight: 300;
+				margin-top: 15px;
+				margin-bottom: 50px;
+			}
+		}
+	}
 }
