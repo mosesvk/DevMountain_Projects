@@ -16,40 +16,77 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-.top-h1 {
-  background-color: $secondaryColor;
-  transform: skew(-10deg);
-  color: $primaryLightColor;
-  font-size: 5rem;
-  font-weight: 800;
-  margin-bottom: 10px;
-  letter-spacing: -2px;
-}
+  .top-h1 {
+    background-color: $secondaryColor;
+    transform: skew(-10deg);
+    color: $primaryLightColor;
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: -2px;
+    @media (max-width: $laptopMd) {
+      font-size: 4rem;
+      height: 5rem;
+    }
+    @media (max-width: $tablet) {
+      font-size: 3rem;
+      height: 4rem;
+    }
+  }
 
-.top-carousel-h1 {
-  color: $primaryLightColor;
-  font-size: 5rem;
-  font-weight: 800;
-  margin: 0;
-}
+  .top-text-box {
+    background-color: $secondaryColor;
+    width: 30rem;
+    height: 7rem;
+    transform: skew(-10deg);
+    text-align: center;
+    @media (max-width: $laptopMd) {
+      width: 25rem;
+      height: 5.5rem;
+    }
+    @media (max-width: $tablet) {
+      width: 25rem;
+      height: 4rem;
+    }
+  
+    .top-carousel-h1 {
+      color: $primaryLightColor;
+      font-size: 5rem;
+      font-weight: 800;
+      margin: 0;
+      @media (max-width: $laptopMd) {
+        font-size: 4rem;
+        height: 5.5rem;
+      }
+      @media (max-width: $tablet) {
+        font-size: 3rem;
+        height: 4rem;
+      }
+    }
+  }
+  
+  .top-join-wrap {
+    h1 {
+      font-weight: 600;
+      @media (max-width: $laptopMd){
+        font-size: 3rem!important;
+      }
+      @media (max-width: $laptopSm){
+        font-size: 2.5rem!important;
+      }
+    }
 
-.top-text-box {
-  background-color: $secondaryColor;
-  width: 30rem;
-  height: 7rem;
-  transform: skew(-10deg);
-  text-align: center;
-}
+    .top-join {
 
-.top-join {
-
-  &:hover {
-    text-decoration: none;
-    background-color: #eeeeeeb0;
+      &:hover {
+        text-decoration: none;
+        background-color: #eeeeeeb0;
+      }
+    }
   }
 }
+
 
 /// Mid-Container ///
 
