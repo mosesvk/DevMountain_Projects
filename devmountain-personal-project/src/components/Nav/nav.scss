@@ -46,7 +46,7 @@
 .nav-bars {
   display: none;
 
-  @media screen and (max-width: 1300px){
+  @media screen and (max-width: $laptopMd){
     display: flex;
     color: $primaryLightColor;
     justify-content: flex-end;
@@ -62,6 +62,45 @@
   justify-content: flex-end;
   padding-bottom: 8px;
   align-items: flex-end;
+
+  .nav-map-link {
+    @media (max-width: $laptopMd){
+      display: none;
+    }
+  }
+
+  .nav-login-active {
+    display: flex;
+    font-weight: 700;
+    align-items: flex-end;
+  
+    a {
+      font-size: 1rem;
+      color: $primaryLightColor;
+      margin-right: 30px;
+  
+      &:hover{
+        text-decoration: none;
+        background: #727272c9;
+      }
+
+      @media (max-width: $laptopMd){
+        padding: 0;
+      }
+    }
+  }
+  
+  .nav-user-icon {
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+  
+    p {
+      margin: 0!important;
+    }
+  }
 }
 
 .social-links, 
@@ -71,7 +110,7 @@
   text-decoration: none;
   color: #fff;
 
-  @media screen and (max-width: 1300px){
+  @media screen and (max-width: $laptopMd){
     margin: 0;
     padding-bottom: 20px;
   }
@@ -81,38 +120,9 @@
   }
 }
 
-.nav-login-active {
-  display: flex;
-  font-weight: 700;
-  align-items: flex-end;
-
-  a {
-    font-size: 1rem;
-    color: $primaryLightColor;
-    margin-right: 30px;
-
-    &:hover{
-      text-decoration: none;
-      background: #727272c9;
-    }
-  }
-}
-
-.nav-user-icon {
-  display: flex;
-  margin-right: 30px;
-  align-items: center;
-  flex-direction: column;
-  font-size: 1rem;
-
-  p {
-    margin: 0!important;
-  }
-}
-
 .phone-size-link {
 
-  @media screen and (max-width: 1300px){
+  @media screen and (max-width: $laptopMd){
     padding-left: 20px;
 
   }
@@ -130,7 +140,7 @@
 .social-icons {
   font-size: 20px;
 
-  @media screen and (max-width: 1300px){
+  @media screen and (max-width: $laptopMd){
     display: none;
   }
 }
@@ -139,7 +149,7 @@
   display: flex;
   align-items: baseline;
 
-  @media screen and (max-width: 1300px){
+  @media screen and (max-width: $laptopMd){
     display: none
   }
 }

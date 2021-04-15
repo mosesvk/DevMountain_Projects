@@ -17,6 +17,12 @@
   flex-direction: column;
   align-items: center;
 
+  @media (max-width: $tablet) {
+    position: relative;
+    top: 10%;
+    right: auto;
+  }
+
   .top-h1 {
     background-color: $secondaryColor;
     transform: skew(-10deg);

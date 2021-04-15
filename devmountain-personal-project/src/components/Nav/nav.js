@@ -34,7 +34,7 @@ const Nav = (props) => {
         </div>
         <div className="nav-info-wrap">
           <div className="nav-social-wrap">
-            <a className="social-links phone-size-link" href="https://www.google.com/maps/dir/40.2861729,-111.749542/athletic+republic+google+maps/@40.3525274,-111.9417521,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x874d81e6f4f56b71:0x14fb336b3b3a2144!2m2!1d-111.8334535!2d40.3858813" target="_blank" rel="noreferrer">
+            <a className="social-links phone-size-link nav-map-link" href="https://www.google.com/maps/dir/40.2861729,-111.749542/athletic+republic+google+maps/@40.3525274,-111.9417521,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x874d81e6f4f56b71:0x14fb336b3b3a2144!2m2!1d-111.8334535!2d40.3858813" target="_blank" rel="noreferrer">
               <FaLocationArrow/>
               <Link className="social-links">Lehi, UT</Link>
             </a>
