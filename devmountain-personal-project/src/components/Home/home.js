@@ -34,7 +34,6 @@ const home = () => {
             <h1>WE'RE ON A MISSION TO ADVANCE YOUR SKILLS TO PERFORM EFFECTIVELY ON THE FIELD</h1>
             <h3>We specialize in offensive lineman specific techniques and drills. </h3>
             <img
-              className="mid-img"
               src="https://images-na.ssl-images-amazon.com/images/I/61bNYjc2tiL._AC_SX679_.jpg"
               alt="Second slide"
             />

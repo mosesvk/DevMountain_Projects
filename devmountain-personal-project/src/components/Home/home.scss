@@ -54,7 +54,7 @@
 /// Mid-Container ///
 
 .mid-container {
-  height: 80vh;
+  // height: 80vh;
 }
 
 .mid-wrap {
@@ -73,25 +73,53 @@
     padding: 3rem 6rem;
   }
   @media (max-width: 1500px){
-    padding: 3rem 2rem;
+    padding: 3rem 5rem;
+  }
+  @media (max-width: $laptopSm){
+    padding: 1rem 10px;
+    max-width: 100%;
   }
 }
 
 .mid-wrap-info {
+  @media (max-width: $laptop) {
+    padding: 1rem 7rem;
+    font-size: 2.5rem;
+  }
+  @media (max-width: $laptopMd){
+    padding: 1rem 0;
+  }
+  @media (max-width: $laptopSm){
+    padding: 1rem 0;
+    max-width: 100%;
+  }
   h1 {
     padding: 1rem 0;
     font-weight: 700;
     color: $secondaryColor;
   }
-}
-
-.mid-img
-{
-  margin-top: 5rem;
-  width: 25rem!important;
-  height: 25rem!important;
-  border-radius: 30px;
-  align-self: center;
+  h3 {
+    font-weight: 600;
+    color: $gray;
+  }
+  img {
+    margin-top: 5rem;
+    width: 25rem!important;
+    height: 25rem!important;
+    border-radius: 30px;
+    align-self: center;
+    
+    @media (max-width: $laptop){
+      width: 18rem!important;
+      height: 18rem!important;
+      margin-top: 2rem;
+    }
+    @media (max-width:$tablet){
+      width: 12rem!important;
+      height: 12rem!important;
+      margin-top: 2rem;
+    }
+  }
 }
 
 .top-join-wrap {

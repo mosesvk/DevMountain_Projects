@@ -1,8 +1,9 @@
 @import '../../variables';
 
 .footer-container {
-  background: #474545;
+  background: $gray;
   height: 5rem;
+  z-index: 100;
 }
 
 .footer-wrap {
