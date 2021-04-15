@@ -53,7 +53,7 @@ const contact = () => {
               <li><a href="https://www.instagram.com/t.kanuch78/?hl=en" target="_blank" rel="noreferrer" class="contact-icon">
               <FaInstagram/></a>
               </li>
-              <li><a href="https://www.linkedin.com/in/tuni-kanuch-b00673140/" target="_blank" rel="noreferrer" class="contact-icon">
+              <li><a href="https://www.youtube.com/watch?app=desktop&v=mSa3CtE7DSE" target="_blank" rel="noreferrer" class="contact-icon">
               <FaYoutube/></a>
               </li>
             </ul>

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import axios from 'axios'
 import {
   FaFacebookSquare,
-  FaLinkedin,
+  FaYoutubeSquare,
   FaInstagram,
   FaLocationArrow,
   FaTwitterSquare,
@@ -52,7 +52,7 @@ const Nav = (props) => {
             <a href="https://twitter.com/kanuch78" target="_blank" rel="noreferrer" className="social-links social-icons"><FaTwitterSquare/></a>
             <a href="https://www.facebook.com/TuniK78" target="_blank" rel="noreferrer" className="social-links social-icons"><FaFacebookSquare/></a>
             <a href="https://www.instagram.com/t.kanuch78/?hl=en" target="_blank" rel="noreferrer" className="social-links social-icons"><FaInstagram/></a>
-            <a href="https://www.linkedin.com/in/tuni-kanuch-b00673140/" target="_blank" rel="noreferrer" className="social-links social-icons"><FaLinkedin/></a>
+            <a href="https://www.youtube.com/watch?app=desktop&v=mSa3CtE7DSE" target="_blank" rel="noreferrer" className="social-links social-icons"><FaYoutubeSquare/></a>
           </div>
           <div className="nav-links-wrap">
             <Link className="links" to="/">HOME</Link>

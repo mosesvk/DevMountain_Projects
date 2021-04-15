@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   FaFacebookSquare,
-  FaLinkedin,
+  FaYoutubeSquare,
   FaInstagram,
   FaTwitterSquare
 } from 'react-icons/fa';
@@ -23,7 +23,7 @@ const Footer = () => {
           <a href="https://twitter.com/kanuch78" target="_blank" rel="noreferrer" className="social-footer-links"><FaTwitterSquare/></a>
           <a href="https://www.facebook.com/TuniK78" target="_blank" rel="noreferrer" className="social-footer-links"><FaFacebookSquare/></a>
           <a href="https://www.instagram.com/t.kanuch78/?hl=en" target="_blank" rel="noreferrer" className="social-footer-links"><FaInstagram/></a>
-          <a href="https://www.linkedin.com/in/tuni-kanuch-b00673140/" target="_blank" rel="noreferrer" className="social-footer-links"><FaLinkedin/></a>
+          <a href="https://www.youtube.com/watch?app=desktop&v=mSa3CtE7DSE" target="_blank" rel="noreferrer" className="social-footer-links"><FaYoutubeSquare/></a>
         </div>
       </div>
     </div>
