@@ -62,6 +62,19 @@
   width: 100%;
   text-align: center;
   // height: 100%;
+
+  @media (max-width: 2250px){
+    padding: 3rem 14rem;
+  }
+  @media (max-width: 1800px){
+    padding: 3rem 8rem;
+  }
+  @media (max-width: 1650px){
+    padding: 3rem 6rem;
+  }
+  @media (max-width: 1500px){
+    padding: 3rem 2rem;
+  }
 }
 
 .mid-wrap-info {
