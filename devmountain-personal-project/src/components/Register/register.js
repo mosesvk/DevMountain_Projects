@@ -24,7 +24,7 @@ const register = () => {
               <div className="square"></div>
               <div className="square"></div>
             </div>
-            <h2 className="title">Sign up now</h2>
+            <h2 className="title">Register & Join</h2>
           </div>
           <div className="form">
             <form>
@@ -33,9 +33,10 @@ const register = () => {
                 <input type="text" name="lastname" placeholder="Last name"/>
               </div>
               <input type="email" name="email" placeholder="Email"/>
+              <input type="username" name="username" placeholder="username"/>
               <input type="password" name="password" placeholder="Password"/>
               <div className="reg-sign-up">
-                <p>Already a member?</p><Link>Sign in</Link>
+                <p>Already a member?</p><Link to="/login">Sign in</Link>
               </div>
               <button type="submit" name="submit">Sign up for free</button>
             </form>
