@@ -19,6 +19,7 @@ const Nav = (props) => {
   useEffect(() => {
     axios.get('/auth/getUser')
       .then(res => {
+        console.log(res.data)
         updateUser(res.data)
       })
       .catch(err => console.log(err))

@@ -15,7 +15,7 @@ module.exports = {
     }
     delete existingUser.password
     req.session.user = existingUser
-    return res.status(200).send();
+    return res.status(200).send(req.session.user);
   },
   register: async (req, res) => {
     const {username, password, first_name, last_name, email} = req.body;
