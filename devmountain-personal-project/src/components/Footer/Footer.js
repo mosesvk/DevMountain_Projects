@@ -12,14 +12,14 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-wrap">
-        <div className="info-wrap">
-          <Link className="footer-link">PRIVACY</Link>
-          <Link className="footer-link">TERMS</Link>
-          <Link className="footer-link">CANCEL</Link>
+        <div>
+          <Link className="footer-link">HOME</Link>
           <Link className="footer-link">CONTACT</Link>
           <Link className="footer-link">LOGIN</Link>
+          <Link className="footer-link">JOIN</Link>
         </div>
-        <div className="social-wrap">
+        <p> Copyright &copy; Moses Kaumatule</p>
+        <div>
           <a href="https://twitter.com/kanuch78" target="_blank" rel="noreferrer" className="social-footer-links"><FaTwitterSquare/></a>
           <a href="https://www.facebook.com/TuniK78" target="_blank" rel="noreferrer" className="social-footer-links"><FaFacebookSquare/></a>
           <a href="https://www.instagram.com/t.kanuch78/?hl=en" target="_blank" rel="noreferrer" className="social-footer-links"><FaInstagram/></a>

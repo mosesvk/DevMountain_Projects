@@ -47,7 +47,7 @@
 					border-radius: 8px;
 					transform: rotateX(55deg) rotateZ(45deg);
 					box-shadow: 3px 3px 0px 2px white;
-					-webkit-backface-visibility: hidden;
+					// -webkit-backface-visibility: hidden;
 					&:nth-of-type(1) {
 						background: black;
 						top: 0;

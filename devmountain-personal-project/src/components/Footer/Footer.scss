@@ -3,7 +3,6 @@
 .footer-container {
   background: #474545;
   height: 5rem;
-  
 }
 
 .footer-wrap {
@@ -11,7 +10,25 @@
   justify-content: space-around;
   align-items: baseline;
   width: 100%;
-  height: 100%
+  height: 100%;
+  color: $primaryLightColor;
+
+  P {
+    margin: 0;
+  }
+  
+  @media (max-width: 2250px){
+    padding: 0 14rem;
+  }
+  @media (max-width: 1800px){
+    padding: 0 8rem;
+  }
+  @media (max-width: 1650px){
+    padding: 0 6rem;
+  }
+  @media (max-width: 1500px){
+    padding: 0 2rem;
+  }
 }
 
 .footer-link {
