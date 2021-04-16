@@ -38,8 +38,8 @@ const Nav = (props) => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <div className="nav">
         <div className="nav-container">
-          <div>
-            <h1 className="nav-logo">POWERHOUSE</h1>
+          <div className="nav-logo">
+            <h1>POWERHOUSE FITNESS</h1>
           </div>
           <div className="nav-info-wrap">
             <div className="nav-social-wrap">

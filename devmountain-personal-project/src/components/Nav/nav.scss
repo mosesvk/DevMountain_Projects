@@ -2,12 +2,12 @@
 
 .nav {
   display: block!important;
-  font-size: 24px;
+  // font-size: 24px;
   padding: 25px 50px;
   font-family: 'Montserrat', sans-serif;
   background: $gray;
   color: white;
-  height: 85px;
+  height: 95px;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -41,14 +41,19 @@
 }
 
 .nav-logo {
-  font-size: 45px;
+  font-size: 3rem;
   font-weight: 900;
+  font-family: 'Black Ops One', 'Montserrat', sans-serif;
+  max-width: 350px;
+  text-align: center;
 
-  @media (max-width: $laptopSm){
-    font-size: 30px;
-  }
-  @media (max-width: $phone) {
-    font-size: 1rem;
+  h1 {
+    @media (max-width: $laptopSm){
+      font-size: 2.5rem;
+    }
+    @media (max-width: $phone) {
+      font-size: 1.75rem;
+    }
   }
 }
 
@@ -138,7 +143,7 @@
 
   @media screen and (max-width: $laptopMd){
     margin: 0;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
   }
 
   &:hover {

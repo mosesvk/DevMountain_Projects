@@ -14,7 +14,7 @@ const Sidebar = (props) => {
         <FaTimes onClick={toggle}/>
       </div>
       <div className="sidebar-header">
-        <h1 className="sidebar-nav-logo">POWERHOUSE</h1>
+        <h1 className="sidebar-nav-logo">POWERHOUSE FITNESS</h1>
       </div>
       <div className="sidebar-wrap">
         <div className="sidebar-menu">
