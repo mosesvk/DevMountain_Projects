@@ -1,25 +1,35 @@
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  
-}
+@import '../../variables';
 
 #contact {
   width: 100%;
-  height: 100vh;
-  background-color: #000;
+  // height: 80vh;
+  background: linear-gradient(to right, #e4e9eedc, #e3e7ecce), url("../../images/football-linemen.jpeg") center;
+  background-size: cover;
   overflow: hidden;
-  /*padding-bottom: 200px;*/
+  padding-bottom: 100px;
 }
 
 .section-header {
   text-align: center;
   margin: 0 auto;
-  padding: 40px 0;
-  font: 300 60px 'Oswald', sans-serif;
-  letter-spacing: 6px;
-  color: #fff;
+  padding: 40px 0 0;
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  color: black;
+
+  @media (max-width: $laptopSm) {
+    font-size: 3rem;
+    letter-spacing: 0;
+  }
+}
+
+.contact-p {
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px 0 60px;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: $gray;
 }
 
 .contact-wrapper {
@@ -33,15 +43,15 @@ body {
 .form-horizontal {
   float: left;
   max-width: 400px;
-  font-family: 'Lato';
   font-weight: 400;
 }
 
 .form-control, textarea {
   max-width: 400px;
-  background-color: #000;
+  background-color: $primaryLightColor;
   color: #fff;
   letter-spacing: 1px;
+  box-shadow: 0 1px 20px 5px rgba(0,0,0,0.4);
 }
 
 .send-button {
@@ -61,7 +71,7 @@ body {
 .send-text {
   display: block;
   margin-top: 10px;
-  font: 700 12px 'Lato', sans-serif;
+  font: 700 12px;
   letter-spacing: 2px;
 }
 
@@ -85,13 +95,13 @@ body {
 
 .list-item {
   line-height: 4;
-  color: #aaa;
+  color: black;
 }
 
 .contact-text {
   font: 300 18px 'Lato', sans-serif;
   letter-spacing: 1.9px;
-  color: #bbb;
+  color: black;
 }
 
 .place {
@@ -107,7 +117,7 @@ body {
 }
 
 .contact-text a {
-  color: #bbb;
+  color: black;
   text-decoration: none;
   transition-duration: 0.2s;
 }
@@ -171,22 +181,24 @@ body {
 }
 
 .social-media-list li:hover a {
-  color: #000;
+  color: $gray;
 }
 
 .copyright {
-  font: 200 14px 'Oswald', sans-serif;
-  color: #555;
+  color: black;
+  padding: 0 5rem;
   letter-spacing: 1px;
   text-align: center;
+  font-size: .75rem;
 }
 
 hr {
-  border-color: rgba(255,255,255,.8); ;
+  border-color: black; 
+  margin-left: 25px;
 }
 
 /* Begin Media Queries*/
-@media screen and (max-width: 760px) {
+@media screen and (max-width: $tablet) {
   .direct-contact-container, .form-horizontal {
     float: none;
     margin: 10px auto;
@@ -213,18 +225,9 @@ hr {
     #contact {
       width: 100%;
       height: 100vh;
-      background-color: #000;
       overflow: hidden;
+      padding: 20px 0;
       /*padding-bottom: 200px;*/
-    }
-    
-    .section-header {
-      text-align: center;
-      margin: 0 auto;
-      padding: 40px 0;
-      font: 300 60px 'Oswald', sans-serif;
-      letter-spacing: 6px;
-      color: #fff;
     }
     
     .contact-wrapper {
@@ -238,13 +241,12 @@ hr {
     .form-horizontal {
       float: left;
       max-width: 400px;
-      font-family: 'Lato';
       font-weight: 400;
     }
     
     .form-control, textarea {
       max-width: 400px;
-      background-color: #000;
+      background-color: $primaryLightColor;
       color: #fff;
       letter-spacing: 1px;
     }
@@ -266,7 +268,7 @@ hr {
     .send-text {
       display: block;
       margin-top: 10px;
-      font: 700 12px 'Lato', sans-serif;
+      font: 700 12px;
       letter-spacing: 2px;
     }
     
@@ -290,13 +292,13 @@ hr {
     
     .list-item {
       line-height: 4;
-      color: #aaa;
+      color: black;
     }
     
     .contact-text {
       font: 300 18px 'Lato', sans-serif;
       letter-spacing: 1.9px;
-      color: #bbb;
+      color: black;
     }
     
     .place {
@@ -312,13 +314,13 @@ hr {
     }
     
     .contact-text a {
-      color: #bbb;
+      color: black;
       text-decoration: none;
       transition-duration: 0.2s;
     }
     
     .contact-text a:hover {
-      color: #fff;
+      color: black;
       text-decoration: none;
     }
     
@@ -376,18 +378,19 @@ hr {
     }
     
     .social-media-list li:hover a {
-      color: #000;
+      color: $gray;
     }
     
     .copyright {
-      font: 200 14px 'Oswald', sans-serif;
-      color: #555;
+      color: black;
       letter-spacing: 1px;
       text-align: center;
+      font-size: .75rem;
+      padding: 0 4.5rem;
     }
     
     hr {
-      border-color: rgba(255,255,255,.8); ;
+      border-color: black ;
     }
     
     /* Begin Media Queries*/
@@ -456,7 +459,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 569px) {
+@media screen and (max-width: $phone) {
 
   .direct-contact-container, .form-wrapper {
     float: none;
