@@ -16,6 +16,8 @@ const Sidebar = (props) => {
         <div className="sidebar-menu">
           <Link to="/register"
             onClick={toggle}>JOIN</Link>
+          <Link to="/"
+            onClick={toggle}>HOME</Link>
           <Link to="/about"
             onClick={toggle}>ABOUT</Link>
           <Link to="/contact"

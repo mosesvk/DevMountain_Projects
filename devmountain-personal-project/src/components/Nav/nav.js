@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 import {
@@ -16,7 +16,13 @@ import {updateUser} from '../../redux/userReducer'
 import './nav.scss'
 
 const Nav = (props) => {
-  const { toggle, user, updateUser, isOpen } = props;
+  const {user, updateUser} = props;
+
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  }
 
   useEffect(() => {
     axios.get('/auth/getUser')
@@ -66,8 +72,8 @@ const Nav = (props) => {
               {/* <Link className="links" to="/register">REGISTER</Link> */}
               
             </div>
-            <div className="nav-bars" onClick={toggle}>
-              <FaBars />
+            <div className="nav-bars">
+              <FaBars className="bars-icon" onClick={toggle}/>
             </div>
           </div>
         </div>
