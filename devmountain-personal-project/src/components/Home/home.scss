@@ -4,6 +4,10 @@
   background: linear-gradient(to left, #4292ee00, #474545f5), url("../../images/byu-fb.jpg") center;
   background-size: cover;
   height: 80vh;
+
+  @media (max-width: $tablet){
+    height: auto;
+  }
 }
 
 .top-wrap {
@@ -22,6 +26,7 @@
     position: relative;
     top: 10%;
     right: auto;
+    padding: 5rem 0;
   }
 
   .top-h1 {
@@ -85,6 +90,9 @@
       }
       @media (max-width: $laptopSm){
         font-size: 2.5rem!important;
+      }
+      @media (max-width: $tablet){
+        font-size: 2rem!important;
       }
     }
 
