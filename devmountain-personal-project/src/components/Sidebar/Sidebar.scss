@@ -10,6 +10,13 @@
   outline: none;
   float: right;
   color: $primaryLightColor;
+  @media (max-width: $phone){
+    position: relative;
+    right: none;
+    top: 0;
+    left: 8rem;
+  }
+
 }
 
 .sidebar-header {
@@ -18,11 +25,22 @@
   text-align: center;
   color: $primaryLightColor;
   font-family: 'Black Ops One', 'Montserrat', sans-serif;
+  @media (max-width: $phoneSm){
+    margin: 2rem 0 1rem;
+  }
+
+  .sidebar-nav-logo {
+    @media (max-width: $phoneSm){
+      font-size: 2rem;
+    }
+  }
 }
 
 .sidebar-wrap {
   color: $primaryLightColor;
   width: 100%;
+  border-bottom: solid 2.5px $lighterGray;
+
   .sidebar-menu {
     display: grid;
     grid-template-columns: 1fr;
@@ -31,18 +49,46 @@
     font-size: 1.5rem;
     font-weight: 700;
     color: white;
-    @media screen and (max-width: 480px) {
-      grid-template-rows: repeat(6, 60px);
+    @media screen and (max-width: $phoneSm) {
+      grid-template-rows: repeat(6, 40px);
     }
+  }
+  .sidebar-link {
+    height: 100%;
+    color: white;
+    padding-left: 20px;
+    padding-top: 12px;
+    &:hover {
+      text-decoration: none;
+      background-color: #696565;
+    }
+    @media (max-width: $phoneSm){
+      font-size: 1.25rem;
+    }
+  }
+  .sidebar-join {
+    text-align: center;
+    background-color: $secondaryColor;
+    padding-top: 12px;
+    margin-bottom: 5px;
+    &:hover {
+      background-color: #3484e7bf;
+    }
+  }
+}
 
-    .sidebar-link {
-      height: 100%;
+.sidebar-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 12px;
+
+  .social-sidebar-links {
+    font-size: 2rem;
+    color: $lightestGray;
+    padding-right: 15px;
+    &:hover {
       color: white;
-      padding-left: 20px;
-      &:hover {
-        text-decoration: none;
-        background-color: #696565;
-      }
     }
   }
 }

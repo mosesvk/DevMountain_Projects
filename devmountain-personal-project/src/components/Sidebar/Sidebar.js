@@ -1,6 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {FaTimes} from 'react-icons/fa'
+import {
+  FaTimes,
+  FaFacebookSquare,
+  FaYoutubeSquare,
+  FaInstagram,
+  FaTwitterSquare
+} from 'react-icons/fa';
 import {SidebarContainer} from './SidebarContainer'
 import './Sidebar.scss'
 
@@ -30,8 +36,13 @@ const Sidebar = (props) => {
             onClick={toggle}>PROGRAMS</Link>
           <Link className="sidebar-link" to="/login"
             onClick={toggle}>LOGIN</Link>
-          <hr/>
         </div>
+      </div>
+      <div className="sidebar-footer">
+          <a href="https://twitter.com/kanuch78" target="_blank" rel="noreferrer" className="social-sidebar-links"><FaTwitterSquare/></a>
+          <a href="https://www.facebook.com/TuniK78" target="_blank" rel="noreferrer" className="social-sidebar-links"><FaFacebookSquare/></a>
+          <a href="https://www.instagram.com/t.kanuch78/?hl=en" target="_blank" rel="noreferrer" className="social-sidebar-links"><FaInstagram/></a>
+          <a href="https://www.youtube.com/watch?app=desktop&v=mSa3CtE7DSE" target="_blank" rel="noreferrer" className="social-sidebar-links"><FaYoutubeSquare/></a>
       </div>
     </SidebarContainer>
   )

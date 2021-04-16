@@ -24,7 +24,7 @@ const home = () => {
           </div>
           <div className="top-join-wrap">
             <h1>TRY FIRST SESSION FOR FREE</h1>
-            <Link className="top-join">JOIN</Link>
+            <Link className="top-join" to="/register">JOIN</Link>
           </div>
         </div>
       </div>

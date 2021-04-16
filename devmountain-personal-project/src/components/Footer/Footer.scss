@@ -49,8 +49,12 @@
   .footer-link {
     font-size: 1.20rem;
     font-weight: 700;
-    color: $primaryLightColor;
+    color: $lightestGray;
     padding-right: 15px;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
     @media (max-width: $phoneSm){
       font-size: 1rem;
     }
@@ -58,8 +62,11 @@
   
   .social-footer-links {
     font-size: 2rem;
-    color: $primaryLightColor;
     padding-right: 15px;
+    color: $lightestGray;
+    &:hover {
+      color: white;
+    }
   }
 
 }
