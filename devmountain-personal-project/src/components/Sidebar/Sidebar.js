@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import {FaTimes} from 'react-icons/fa'
+import {SidebarContainer} from './SidebarContainer'
 import './Sidebar.scss'
 
 const Sidebar = (props) => {
@@ -8,28 +9,31 @@ const Sidebar = (props) => {
   const {toggle, isOpen} = props
 
   return (
-    <div className='sidebar-container' isOpen={isOpen} toggle={toggle}>
+    <SidebarContainer isOpen={isOpen} toggle={toggle}>
       <div className="icon-wrap">
-        <FaTimes />
+        <FaTimes onClick={toggle}/>
+      </div>
+      <div className="sidebar-header">
+        <h1 className="sidebar-nav-logo">POWERHOUSE</h1>
       </div>
       <div className="sidebar-wrap">
         <div className="sidebar-menu">
-          <Link to="/register"
+          <Link className="sidebar-link sidebar-join" to="/register"
             onClick={toggle}>JOIN</Link>
-          <Link to="/"
+          <Link className="sidebar-link" to="/"
             onClick={toggle}>HOME</Link>
-          <Link to="/about"
+          <Link className="sidebar-link" to="/about"
             onClick={toggle}>ABOUT</Link>
-          <Link to="/contact"
+          <Link className="sidebar-link" to="/contact"
             onClick={toggle}>CONTACT</Link>
-          <Link to="/programs"
+          <Link className="sidebar-link" to="/programs"
             onClick={toggle}>PROGRAMS</Link>
-          <Link to="/login"
+          <Link className="sidebar-link" to="/login"
             onClick={toggle}>LOGIN</Link>
           <hr/>
         </div>
       </div>
-    </div>
+    </SidebarContainer>
   )
 }
 
