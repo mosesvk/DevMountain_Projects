@@ -1,6 +1,171 @@
 @import '../../variables';
 
 .program-container {
-  background: yellow;
+  // background: yellow;
   height: 100vh;
+  display: flex!important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+.card {
+  flex-shrink: 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  margin: 25px;
+  border-radius: 5px;
+  width: 400px;
+  height: 35rem;
+  background-color: #f1f1f1;
+}
+
+.card__image {
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 100%;
+  height: 60%;
+  background-position: top;
+}
+
+.img1 {
+  background-image: url('https://mathurinchung.github.io/assets-hosting/ecommerce-card/tshirt1.png');
+}
+
+.img2 {
+  background-image: url('https://mathurinchung.github.io/assets-hosting/ecommerce-card/tshirt2.png');
+}
+
+.img3 {
+  background-image: url('https://mathurinchung.github.io/assets-hosting/ecommerce-card/tshirt3.png');
+}
+
+.blue-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: background-color 0.4s ease;
+}
+
+.blue-filter:hover {
+  cursor: pointer;
+  background-color: rgba(118, 176, 194, 0.5);
+}
+
+.btn-reveal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  background-color: #f1f1f1;
+  color: rgb(118, 176, 194);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+}
+
+.blue-filter:hover .btn-reveal {
+  opacity: 1;
+}
+
+.price-title {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+}
+
+.card-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 80%;
+  font-size: 25px;
+}
+
+.card-title::after {
+  position: absolute;
+  top: 45px;
+  content: "Men's running shirt";
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.price {
+  width: 20%;
+  font-size: 18px;
+}
+
+.sizes {
+  padding: 3px 10px;
+  width: 100%;
+}
+
+.sizes-text {
+  position: relative;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sizes-text::after {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  content: "S, M, L, XL";
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.colors {
+  padding: 20px 10px;
+  width: 100%;
+}
+
+.colors__sub-title {
+  margin: 0;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.container-rounded {
+  display: flex;
+  width: 100%;
+}
+
+.rounded {
+  margin-right: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.rounded:nth-child(1) {
+  background-color: #000;
+}
+
+.rounded:nth-child(2) {
+  background-color: #9b9b9b;
+}
+
+.rounded:nth-child(3) {
+  background-color: #fff;
+  border: 0.1px solid rgba(0, 0, 0, 0.6);
+}
+
+.rounded:nth-child(4) {
+  background-color: crimson;
+}
+
+.rounded:nth-child(5) {
+  background-color: salmon;
 }
