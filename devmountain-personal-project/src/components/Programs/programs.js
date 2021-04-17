@@ -11,7 +11,7 @@ const programs = () => {
           </div>
         </div>
         <div className="price-title">
-          <h2 className="card-title">Adidas Originals</h2>
+          <h2 className="card-title">Individual Training</h2>
           <p className="price">$ 39</p>
         </div>
         
@@ -39,7 +39,7 @@ const programs = () => {
         </div>
 
         <div className="price-title">
-          <h2 className="card-title">Adidas Originals</h2>
+          <h2 className="card-title">Group Training</h2>
           <p className="price">$ 39</p>
         </div>
         
