@@ -20,16 +20,6 @@ const programs = () => {
             <p className="sizes-text">Sizes</p>
           </div>
           
-          <div className="colors">
-            <h2 className="colors__sub-title">Colors</h2>
-            <div className="container-rounded">
-              <div className="rounded"></div>
-              <div className="rounded"></div>
-              <div className="rounded"></div>
-              <div className="rounded"></div>
-              <div className="rounded"></div>
-            </div>
-          </div>
         </div>
 
         <div className="card">
@@ -47,17 +37,7 @@ const programs = () => {
           <div className="sizes">
             <p className="sizes-text">Sizes</p>
           </div>
-          
-          <div className="colors">
-            <h2 className="colors__sub-title">Colors</h2>
-            <div className="container-rounded">
-              <div className="rounded"></div>
-              <div className="rounded"></div>
-              <div className="rounded"></div>
-              <div className="rounded"></div>
-              <div className="rounded"></div>
-            </div>
-          </div>
+
         </div>
       </div>
       
