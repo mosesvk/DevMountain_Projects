@@ -5,7 +5,7 @@ import About from './components/About/about'
 import Programs from './components/Programs/programs'
 import Contact from './components/Contact/contact'
 import Register from './components/Register/register'
-import Login from './components/Login/login'
+import Login from './components/Login/Login'
 
 export default (
   <Switch>

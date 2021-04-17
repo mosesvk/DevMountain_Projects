@@ -18,16 +18,16 @@ module.exports = {
     return res.status(200).send(req.session.user);
   },
   register: async (req, res) => {
-    const {username, password, first_name, last_name, email} = req.body;
+    const {username, password, firstName, lastName, email} = req.body;
     const db = req.app.get('db');
     const result = await db.get_user({username});
     const existingUser = result[0];
     if (existingUser) {
-        return res.status(409).send('Username taken');
+        return res.status(409).send('Username is taken');
     }
     const salt = bcrypt.genSaltSync(10);
     const hash = bcrypt.hashSync(password, salt);
-    const registeredUser = await db.register_user({username, first_name, last_name, email, hash})
+    const registeredUser = await db.register_user({username, firstName, lastName, email, hash})
     const user = registeredUser[0];
     delete user.password
     req.session.user = user

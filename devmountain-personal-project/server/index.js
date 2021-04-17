@@ -10,6 +10,7 @@ const {SERVER_PORT, SESSION_SECRET, CONNECTION_STRING} = process.env;
 
 const app = express();
 app.use(express.json());
+//top level middleware converting json to javaScript. 
 app.use(session({
   secret: SESSION_SECRET, 
   resave: false, 

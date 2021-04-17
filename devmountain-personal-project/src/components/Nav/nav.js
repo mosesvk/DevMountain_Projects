@@ -33,6 +33,15 @@ const Nav = (props) => {
       .catch(err => console.log(err))
   }, [updateUser])
 
+  const logout = () => {
+    axios.get('/auth/logout')
+      .then(res => {
+        updateUser(null)
+        props.history.push('/')
+      })
+      .catch(err => console.log(err))
+  }
+
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
@@ -53,7 +62,7 @@ const Nav = (props) => {
                     <FaUserAlt/>
                     <p>{user.username}</p>
                   </div>
-                  <a href="/home">LOGOUT</a>
+                  <h3 onClick={logout}>LOGOUT</h3>
                 </div>
               ) : (
                 <Link className="social-links phone-size-link login-link" to="/login">LOGIN</Link>

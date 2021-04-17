@@ -9,8 +9,8 @@ INSERT INTO users
 VALUES 
 (
   ${username},
-  ${first_name},
-  ${last_name},
+  ${firstName},
+  ${lastName},
   ${email},
   ${hash}
 )
