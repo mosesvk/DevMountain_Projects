@@ -6,6 +6,7 @@ import {FaTimes} from 'react-icons/fa'
 // Black -> #393232
 // Light Brown -> #eabf9f
 // Light Gray -> #dddddd
+// Let's gooooo
 
 export const SidebarContainer = styled.aside`
   position: fixed; 
