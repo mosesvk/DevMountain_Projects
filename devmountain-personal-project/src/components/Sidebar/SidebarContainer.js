@@ -7,6 +7,7 @@ export const SidebarContainer = styled.aside`
   width: 350px; 
   height: 100%; 
   background: #474545; 
+  font-family: 'Montserrat', sans-serif;
   /* border: 5px solid $gray;  */
   display: flex; 
   flex-direction: column;

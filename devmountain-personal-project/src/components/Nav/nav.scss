@@ -146,10 +146,11 @@
   margin-right: 30px;
   text-decoration: none;
   color: #fff;
+  padding-bottom: 15px;
 
   @media screen and (max-width: $laptopMd){
     margin: 0;
-    // padding-bottom: 20px;
+    padding-bottom: 0;
   }
 
   &:hover {

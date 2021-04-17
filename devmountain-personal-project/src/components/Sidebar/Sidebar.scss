@@ -30,6 +30,7 @@
   }
 
   .sidebar-nav-logo {
+    font-size: 2.5rem;
     @media (max-width: $phoneSm){
       font-size: 2rem;
     }
@@ -57,19 +58,20 @@
     height: 100%;
     color: white;
     padding-left: 20px;
-    padding-top: 12px;
+    padding-top: 16px;
     &:hover {
       text-decoration: none;
       background-color: #696565;
     }
     @media (max-width: $phoneSm){
       font-size: 1.25rem;
+      padding-top: 12px;
     }
   }
   .sidebar-join {
     text-align: center;
     background-color: $secondaryColor;
-    padding-top: 12px;
+    padding-top: 16px;
     margin-bottom: 5px;
     &:hover {
       background-color: #3484e7bf;
