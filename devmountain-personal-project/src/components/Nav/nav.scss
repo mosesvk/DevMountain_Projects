@@ -46,7 +46,12 @@
   font-family: 'Black Ops One', 'Montserrat', sans-serif;
   max-width: 350px;
   text-align: center;
+  color: $primaryLightColor;
   // box-shadow: 0 2px 20px 5px;
+  &:hover {
+    text-decoration: none;
+    color: $primaryLightColor;
+  }
 
   h1 {
     @media (max-width: $laptopSm){

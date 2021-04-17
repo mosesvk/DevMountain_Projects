@@ -38,9 +38,9 @@ const Nav = (props) => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <div className="nav">
         <div className="nav-container">
-          <div className="nav-logo">
+          <a className="nav-logo" href="/">
             <h1>POWERHOUSE FITNESS</h1>
-          </div>
+          </a>
           <div className="nav-info-wrap">
             <div className="nav-social-wrap">
               <a className="social-links phone-size-link nav-map-link" href="https://www.google.com/maps/dir//athletic+republic+google+maps/@40.3596245,-111.9002664,11.84z/data=!4m8!4m7!1m0!1m5!1m1!1s0x874d81e6f4f56b71:0x14fb336b3b3a2144!2m2!1d-111.8334535!2d40.3858813" target="_blank" rel="noreferrer">
