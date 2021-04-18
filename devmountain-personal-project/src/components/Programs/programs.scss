@@ -52,11 +52,22 @@
   bottom: 0;
   right: 0;
   transition: background-color 0.4s ease;
+  opacity: .55;
 }
 
 .blue-filter:hover {
   cursor: pointer;
-  background-color: rgba(118, 176, 194, 0.5);
+  opacity: 1;
+}
+
+.card-1-img {
+  background: url('https://img.bleacherreport.net/img/images/photos/003/536/327/hi-res-fce2df9b91fe9f4357907327051dc6a6_crop_exact.jpg?w=1200&h=1200&q=75') center;
+  background-size: cover;
+}
+
+.card-2-img {
+  background: url('https://static.www.nfl.com/image/private/t_editorial_landscape_12_desktop/league/yjnmrc2lnx1b8obxcybm') center;
+  background-size: cover;
 }
 
 .btn-reveal {

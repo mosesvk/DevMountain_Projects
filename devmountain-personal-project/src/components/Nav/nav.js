@@ -54,7 +54,7 @@ const Nav = (props) => {
             <div className="nav-social-wrap">
               <a className="social-links phone-size-link nav-map-link" href="https://www.google.com/maps/dir//athletic+republic+google+maps/@40.3596245,-111.9002664,11.84z/data=!4m8!4m7!1m0!1m5!1m1!1s0x874d81e6f4f56b71:0x14fb336b3b3a2144!2m2!1d-111.8334535!2d40.3858813" target="_blank" rel="noreferrer">
                 <FaLocationArrow/>
-                <Link className="social-links">Lehi, UT</Link>
+                <h3 className="">Lehi, UT</h3>
               </a>
               {user ? (
                 <div className="nav-login-active">
@@ -62,7 +62,7 @@ const Nav = (props) => {
                     <FaUserAlt/>
                     <p>{user.username}</p>
                   </div>
-                  <h3 onClick={logout}>LOGOUT</h3>
+                  <h3 onClick={logout} className="logout">LOGOUT</h3>
                 </div>
               ) : (
                 <Link className="social-links phone-size-link login-link" to="/login">LOGIN</Link>
