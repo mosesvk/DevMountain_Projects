@@ -57,13 +57,13 @@ const Nav = (props) => {
                 <h3 className="">Lehi, UT</h3>
               </a>
               {user ? (
-                <Link className="nav-login-active" to="/user">
-                  <div className="nav-user-icon">
+                <div className="nav-login-active">
+                  <Link className="nav-user-icon" to="/User">
                     <FaUserAlt/>
                     <p>{user.username}</p>
-                  </div>
+                  </Link>
                   <h3 onClick={logout} className="logout">LOGOUT</h3>
-                </Link>
+                </div>
               ) : (
                 <Link className="social-links phone-size-link login-link" to="/login">LOGIN</Link>
               )}
