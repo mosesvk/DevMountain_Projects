@@ -2,7 +2,9 @@ import React from 'react'
 
 import './User.scss'
 
-const User = () => {
+const User = (props) => {
+  const {user} = props
+
   return (
     <div className="portfoliocard">
       <div className="coverphoto"></div>
