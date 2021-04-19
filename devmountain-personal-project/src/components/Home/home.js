@@ -33,19 +33,21 @@ const home = () => {
           <div className="mid-wrap-info">
             <h1>WE'RE ON A MISSION TO ADVANCE YOUR SKILLS TO PERFORM EFFECTIVELY ON THE FIELD</h1>
             <h3>We specialize in offensive lineman specific techniques and drills. </h3>
-            <img
+            {/* <img
               src="https://images-na.ssl-images-amazon.com/images/I/61bNYjc2tiL._AC_SX679_.jpg"
               alt="Second slide"
-            />
+            /> */}
           </div>
         </div>
       </div>
       <div className="bottom-container">
         <div className="bottom-wrap">
           <div className="bottom-wrap-info">
+            <h1 className="bottom-main-h1">CHAMPIONS ARE MADE IN THE OFFSEASON</h1>
             <div className="bottom-wrap-info">
-              <h1>TODAY I WILL DO WHAT OTHERS WON'T, SO TOMORROW I CAN ACCOMPOLISH WHAT OTHERS CAN'T</h1>
+              <h2>TODAY I WILL DO WHAT OTHERS WON'T, SO TOMORROW I CAN ACCOMPOLISH WHAT OTHERS CAN'T</h2>
               <h3>- JERRY RICE</h3>
+              <br/>
             </div>
           </div>
         </div>
