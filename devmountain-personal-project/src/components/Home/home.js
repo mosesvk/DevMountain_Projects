@@ -42,7 +42,12 @@ const home = () => {
       </div>
       <div className="bottom-container">
         <div className="bottom-wrap">
-          
+          <div className="bottom-wrap-info">
+            <div className="bottom-wrap-info">
+              <h1>TODAY I WILL DO WHAT OTHERS WON'T, SO TOMORROW I CAN ACCOMPOLISH WHAT OTHERS CAN'T</h1>
+              <h3>- JERRY RICE</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
