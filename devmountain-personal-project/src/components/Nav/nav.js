@@ -42,7 +42,7 @@ const Nav = (props) => {
       .catch(err => console.log(err))
   }
 
-  console.log(props.user)
+  // console.log(props.user)
 
   return (
     <>

@@ -1,10 +1,12 @@
 import React from 'react'
-
+import {connect} from 'react-redux'
+import {updateUser} from '../../redux/userReducer'
 import './User.scss'
 
 const User = (props) => {
-  // const {user} = props
+  const {user} = props
 
+  console.log(user)
   return (
     <div className="portfoliocard">
       <div className="coverphoto"></div>
@@ -20,7 +22,7 @@ const User = (props) => {
         </div>
       </div>
       <div className="right_col">
-        <h2 className="name">John Doe</h2>
+        <h2 className="name">{user.first_name}</h2>
         <ul className="contact_information">
           <li className="mail">test@gmail.com</li>
           <li className="username">test</li>
@@ -31,4 +33,10 @@ const User = (props) => {
   )
 }
 
-export default User
+const mapStateToProps = (stateRedux) => {
+  return {
+    user: stateRedux.userReducer.user
+  }
+}
+
+export default connect(mapStateToProps, {updateUser})(User)

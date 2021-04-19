@@ -1,7 +1,7 @@
 // import axios from 'axios';
 
 const initialState = {
-  user: null
+  user: {}
 }
 
 const UPDATE_USER = 'UPDATE_USER'
