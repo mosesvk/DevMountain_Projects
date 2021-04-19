@@ -20,11 +20,15 @@
 	background-size: cover;
 	.box#sign-up {
 		box-sizing: border-box;
-		width: 440px;
+		width: 540px;
 		margin: 40px auto;
 		border-radius: 2px;
 		box-shadow: 0 1px 20px 5px rgba(0,0,0,0.4);
-		padding: 15px 35px;
+		padding: 15px 100px;
+		@media (max-width: $phone){
+			width: 300px;
+			padding: 15px 35px;
+		}
 		.back {
 			text-decoration: none;
 			line-height: 40px;
