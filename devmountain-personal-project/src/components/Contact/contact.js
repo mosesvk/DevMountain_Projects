@@ -1,10 +1,10 @@
 import React from "react";
-import {
-  FaFacebookSquare,
-  FaTwitterSquare,
-  FaInstagram,
-  FaYoutube,
-} from 'react-icons/fa'
+// import {
+//   FaFacebookSquare,
+//   FaTwitterSquare,
+//   FaInstagram,
+//   FaYoutube,
+// } from 'react-icons/fa'
 import "./contact.scss";
 
 const contact = () => {
@@ -41,21 +41,17 @@ const contact = () => {
             <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">kanuch78@gmail.com</a></span></i></li>
           </ul>
           <hr/>
-          <ul class="social-media-list">
-            <li><a href="https://www.facebook.com/TuniK78" target="_blank" rel="noreferrer" class="contact-icon">
+          {/* <ul class="social-media-list">
+            <a href="https://www.facebook.com/TuniK78" target="_blank" rel="noreferrer" class="contact-icon">
               <FaFacebookSquare/></a>
-            </li>
-            <li><a href="https://twitter.com/kanuch78" target="_blank" rel="noreferrer" class="contact-icon">
+            <a href="https://twitter.com/kanuch78" target="_blank" rel="noreferrer" class="contact-icon">
             <FaTwitterSquare/></a>
-            </li>
-            <li><a href="https://www.instagram.com/t.kanuch78/?hl=en" target="_blank" rel="noreferrer" class="contact-icon">
+            <a href="https://www.instagram.com/t.kanuch78/?hl=en" target="_blank" rel="noreferrer" class="contact-icon">
             <FaInstagram/></a>
-            </li>
-            <li><a href="https://www.youtube.com/watch?app=desktop&v=mSa3CtE7DSE" target="_blank" rel="noreferrer" class="contact-icon">
+            <a href="https://www.youtube.com/watch?app=desktop&v=mSa3CtE7DSE" target="_blank" rel="noreferrer" class="contact-icon">
             <FaYoutube/></a>
-            </li>
           </ul>
-          <hr/>
+          <hr/> */}
           <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED | Powerhouse Fitness</div>
         </div>
       </div>

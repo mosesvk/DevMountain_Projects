@@ -40,6 +40,11 @@ const home = () => {
           </div>
         </div>
       </div>
+      <div className="bottom-container">
+        <div className="bottom-wrap">
+          
+        </div>
+      </div>
     </div>
   )
 }

@@ -1,12 +1,12 @@
 @import '../../variables';
 
 .top-container {
-  background: linear-gradient(to left, #4292ee00, #474545f5), url("../../images/byu-fb.jpg") center;
+  background: linear-gradient(to left, #4292ee00, #474545f5), url("../../images/byu-fb.jpg") center fixed;
   background-size: cover;
   height: 80vh;
   font-family: 'Montserrat', sans-serif;
 
-  @media (max-width: $tablet){
+  @media (max-width: $laptopSm){
     height: auto;
   }
 }
@@ -23,7 +23,7 @@
   align-items: center;
   text-align: center;
 
-  @media (max-width: $tablet) {
+  @media (max-width: $laptopSm) {
     position: relative;
     top: 10%;
     right: auto;
@@ -42,8 +42,8 @@
       font-size: 4rem;
       height: 5rem;
     }
-    @media (max-width: $tablet) {
-      font-size: 3rem;
+    @media (max-width: $laptopSm) {
+      font-size: 4rem;
       height: 4rem;
     }
   }
@@ -58,8 +58,8 @@
       width: 25rem;
       height: 5rem;
     }
-    @media (max-width: $tablet) {
-      width: 18rem;
+    @media (max-width: $laptopSm) {
+      width: 24rem;
       height: 4rem;
     }
     @media (max-width: $phone) {
@@ -76,9 +76,9 @@
         font-size: 4rem;
         height: 5.5rem;
       }
-      @media (max-width: $tablet) {
-        font-size: 3rem;
-        height: 4rem;
+      @media (max-width: $laptopSm) {
+        font-size: 4rem;
+        height: 5rem;
       }
     }
   }
@@ -92,9 +92,9 @@
       @media (max-width: $laptopSm){
         font-size: 2.5rem!important;
       }
-      @media (max-width: $tablet){
-        font-size: 2rem!important;
-      }
+      // @media (max-width: $tablet){
+      //   font-size: 2rem!important;
+      // }
     }
 
     .top-join {
@@ -112,6 +112,7 @@
 
 .mid-container {
   font-family: 'Montserrat', sans-serif;
+  padding: 50px 0;
 }
 
 .mid-wrap {
