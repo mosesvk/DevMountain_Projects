@@ -16,7 +16,7 @@ import {updateUser} from '../../redux/userReducer'
 import './nav.scss'
 
 const Nav = (props) => {
-  const {user, updateUser} = props;
+  const {user, updateUser, history} = props;
 
   const [isOpen, setIsOpen] = useState(false)
 
@@ -37,7 +37,7 @@ const Nav = (props) => {
     axios.get('/auth/logout')
       .then(res => {
         updateUser(null)
-        props.history.push('/')
+        history.push('/')
       })
       .catch(err => console.log(err))
   }

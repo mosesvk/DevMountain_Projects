@@ -6,27 +6,24 @@ import './User.scss'
 const User = (props) => {
   const {user} = props
 
-  console.log(user)
+  // console.log(user)
   return (
     <div className="portfoliocard">
       <div className="coverphoto"></div>
       <div className="profile_picture"></div>
       <div className="left_col">
         <div className="followers">
-          <div className="follow_count">18,541</div>
-          Followers
-        </div>
-        <div className="following">
-          <div className="follow_count">181</div>
-          Following
+          <h1>User Profile</h1>
         </div>
       </div>
       <div className="right_col">
-        <h2 className="name">{user.first_name}</h2>
+        <h2 className="name">{user.first_name} {user.last_name}</h2>
         <ul className="contact_information">
-          <li className="mail">test@gmail.com</li>
-          <li className="username">test</li>
-          <li className="password">test</li>
+          <li className="firstName">{user.first_name}</li>
+          <li className="lastName">{user.last_name}</li>
+          <li className="mail">{user.email}</li>
+          <li className="username">{user.username}</li>
+          <li className="password">{user.hash}</li>
         </ul>
       </div>
 		</div>
