@@ -8,11 +8,13 @@ import {
   FaTwitterSquare
 } from 'react-icons/fa';
 import {SidebarContainer} from './SidebarContainer'
+import {connect} from 'react-redux'
+import {updateUser} from '../../redux/userReducer'
 import './Sidebar.scss'
 
 const Sidebar = (props) => {
   
-  const {toggle, isOpen} = props
+  const {toggle, isOpen, user, logout} = props
 
   return (
     <SidebarContainer isOpen={isOpen} toggle={toggle}>
@@ -24,8 +26,17 @@ const Sidebar = (props) => {
       </div>
       <div className="sidebar-wrap">
         <div className="sidebar-menu">
-          <Link className="sidebar-link sidebar-join" to="/register"
-            onClick={toggle}>JOIN</Link>
+          {user ? (
+                <>
+                  <h3 onClick={logout} className="sidebar-link">LOGOUT</h3>
+                </>
+              ) : (
+                <>
+                <Link className="sidebar-link sidebar-join" to="/register"
+                onClick={toggle}>JOIN</Link>
+                <Link className="sidebar-link" to="/login" onClick={toggle}>LOGIN</Link>
+                </>
+              )}
           <Link className="sidebar-link" to="/"
             onClick={toggle}>HOME</Link>
           <Link className="sidebar-link" to="/about"
@@ -34,8 +45,6 @@ const Sidebar = (props) => {
             onClick={toggle}>CONTACT</Link>
           <Link className="sidebar-link" to="/programs"
             onClick={toggle}>PROGRAMS</Link>
-          <Link className="sidebar-link" to="/login"
-            onClick={toggle}>LOGIN</Link>
         </div>
       </div>
       <div className="sidebar-footer">
@@ -48,4 +57,10 @@ const Sidebar = (props) => {
   )
 }
 
-export default Sidebar
+const mapStateToProps = (stateRedux) => {
+  return {
+    user: stateRedux.userReducer.user
+  }
+}
+
+export default connect(mapStateToProps, {updateUser})(Sidebar)
