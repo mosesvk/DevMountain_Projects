@@ -6,7 +6,11 @@
 }
 
 .content-column {
+  position: relative;
+  margin-bottom: 50px;
   .inner-column {
+    position: relative;
+    padding-left: 30px;
     .sec-title {
       position:relative;
       z-index: 1;
@@ -56,9 +60,16 @@
         }
       }
     }
+    .text {
+      margin-bottom: 40px;
+      font-size: 16px;
+      line-height: 26px;
+      color: #848484;
+      font-weight: 400;
+    }
     .list-style-one {
       position:relative;
-
+      margin-bottom: 45px;
       li {
         position:relative;
         font-size:16px;
@@ -93,6 +104,7 @@
       }
     }
     .btn-box {
+      position: relative;
       .btn-style-one {
         position: relative;
         display: inline-block;
@@ -113,41 +125,14 @@
   }
 }
 
+.image-column {
+  position: relative;
+  .inner-column {
 
-
-  .about-section .content-column{
-    position: relative;
-    margin-bottom: 50px;
   }
+}
 
-  .about-section .content-column .inner-column{
-    position: relative;
-    padding-left: 30px;
-  }
 
-  .about-section .text{
-    margin-bottom: 40px;
-    font-size: 16px;
-    line-height: 26px;
-    color: #848484;
-    font-weight: 400;
-  }
-
-  .about-section .list-style-one{
-    margin-bottom: 45px;
-  }
-
-  .about-section .btn-box{
-    position: relative;
-  }
-
-  .about-section .btn-box a{
-    padding: 15px 50px;
-  }
-
-  .about-section .image-column{
-    position: relative;
-  }
 
   .about-section .image-column .text-layer{
       position: absolute;
