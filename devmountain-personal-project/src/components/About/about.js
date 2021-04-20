@@ -13,11 +13,15 @@ const about = () => {
                             <span className="title">About Us</span>
                             <h2> <br/>Tuni Kanuch</h2>
                         </div>
-                        <div className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur.</div>
+                        <div className="text">
+                          <p>
+                            Tuni is a former collegiate and professional football player. Received "Mr. Football" honors in high school while leading the Bingham Miners to a State Championship.
+                          </p>
+                        <br/>
+                          <p>
+                            Powerhouse Fitness is a program designed to help high school and collegiate athletes refine their skills on the field through intensive workouts. 
+                          </p>
+                        </div>
                         <ul className="list-style-one">
                             <li>Lorem Ipsum is simply dummy tex</li>
                             <li>Consectetur adipisicing elit</li>
