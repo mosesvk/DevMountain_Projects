@@ -142,6 +142,9 @@
 
 .image-column {
   position: relative;
+  @media (max-width: $laptopSm){
+    padding: 0 0 4rem;
+  }
 
   .inner-column {
     position: relative;
@@ -194,9 +197,7 @@
 
     .image-2 {
       // position: absolute;
-      @media (max-width: $phoneBg){
-        padding: 0 0 4rem;
-      }
+
       img {
         height: 300px;
         box-shadow: 0 30px 50px rgba(8,13,62,35);

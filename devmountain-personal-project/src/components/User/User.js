@@ -8,25 +8,27 @@ const User = (props) => {
 
   // console.log(user)
   return (
-    <div className="portfoliocard">
-      <div className="coverphoto"></div>
-      <div className="profile_picture"></div>
-      <div className="left_col">
-        <div className="followers">
-          <h1>User Profile</h1>
+    <div className="user-container">
+      <div className="portfoliocard">
+        <div className="coverphoto"></div>
+        <div className="profile_picture"></div>
+        <div className="left_col">
+          <div className="followers">
+            <h1>User Profile</h1>
+          </div>
+        </div>
+        <div className="right_col">
+          <h2 className="name">{user.first_name} {user.last_name}</h2>
+          <ul className="contact_information">
+            <li className="firstName">{user.first_name}</li>
+            <li className="lastName">{user.last_name}</li>
+            <li className="mail">{user.email}</li>
+            <li className="username">{user.username}</li>
+            <li className="password">{user.hash}</li>
+          </ul>
         </div>
       </div>
-      <div className="right_col">
-        <h2 className="name">{user.first_name} {user.last_name}</h2>
-        <ul className="contact_information">
-          <li className="firstName">{user.first_name}</li>
-          <li className="lastName">{user.last_name}</li>
-          <li className="mail">{user.email}</li>
-          <li className="username">{user.username}</li>
-          <li className="password">{user.hash}</li>
-        </ul>
-      </div>
-		</div>
+    </div>
   )
 }
 

@@ -6,7 +6,14 @@ a.nostyle{
 	padding:0;
 	margin:0;
 }
-div.portfoliocard{
+
+.user-container {
+	@media (max-width: $laptopSm){
+		height: 100vh;
+	}
+}
+
+.portfoliocard {
 	position:relative;
 	height:450px;
 	width:400px;
@@ -17,6 +24,10 @@ div.portfoliocard{
 	margin:10% auto;
 	overflow:hidden;
 	z-index:100;
+	@media (max-width: $phone){
+		height: 440px;
+    width: 300px;
+	}
 }
 div.portfoliocard div.coverphoto{
 	width:100%;
