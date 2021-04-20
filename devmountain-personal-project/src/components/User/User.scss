@@ -23,7 +23,7 @@ a.nostyle{
 	border-radius:6px;
 	margin:10% auto;
 	overflow:hidden;
-	z-index:100;
+	z-index: -1;
 	@media (max-width: $phone){
 		height: 440px;
     width: 300px;
