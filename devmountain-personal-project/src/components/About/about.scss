@@ -4,7 +4,12 @@
   position: relative;
   padding: 120px 0 70px;
   @media (max-width: $tablet){
-    padding: 60px 0 60px;    
+    padding: 30px 0 60px;    
+  }
+  .container {
+    @media (max-width: $tablet){
+      max-width: 100%;
+    }
   }
 }
 
@@ -16,6 +21,9 @@
   .inner-column {
     position: relative;
     padding-left: 30px;
+    @media (max-width: $laptopMd){
+      text-align: center;
+    }
     .sec-title {
       position:relative;
       z-index: 1;
@@ -139,16 +147,16 @@
     position: relative;
     padding-left: 120px;
     padding-bottom: 125px;
-    :before {
-    position: absolute;
-    left: -75px;
-    top: 65px;
-    // height: 300px;
-    width: 520px;
-    background-image:url('https://i.ibb.co/fxJ1jtC/about-circle-1.png');
-    content: "";
-    // z-index: -1;
-    }
+    // :before {
+    // position: absolute;
+    // left: -75px;
+    // top: 65px;
+    // // height: 300px;
+    // width: 520px;
+    // background-image:url('https://i.ibb.co/fxJ1jtC/about-circle-1.png');
+    // content: "";
+    // // z-index: -1;
+    // }
     @media (max-width:  991px){
       padding-left: 320px;
     }
@@ -156,19 +164,26 @@
       padding: 0;
       display: flex;
       flex-direction: column;
+      text-align: center;
     }
 
     .image-1 {
       position: relative;
+      @media (max-width: $tablet){
+        padding-left: 320px;
+      }
+      @media (max-width: $phoneBg){
+        padding: 0 0 2rem;
+      }
       img {
         height: 500px;
         box-shadow: 0 30px 50px rgba(8,13,62,35);
+        border-radius: 1.5rem;
         @media (max-width: $laptopMd){
           width: 350px;
         }
-        @media (max-width: $tablet) {
-          width: 250px;
-          height: 300px;
+        @media (max-width: $tablet){
+          width: 300px;
         }
         @media (max-width: $phone){
           width: 200px;
@@ -178,12 +193,19 @@
     }
 
     .image-2 {
-      position: absolute;
-      left: 0;
-      bottom: 0;
+      // position: absolute;
+      @media (max-width: $phoneBg){
+        padding: 0 0 4rem;
+      }
       img {
         height: 300px;
         box-shadow: 0 30px 50px rgba(8,13,62,35);
+        border-radius: 1.5rem;
+        @media (min-width: $phoneBg){
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
         @media (max-width: $phone){
           width: 300px;
         }
