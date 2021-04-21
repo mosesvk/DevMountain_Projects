@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
+import {withRouter} from 'react-router'
 import axios from 'axios'
 import {
   FaFacebookSquare,
@@ -35,9 +36,9 @@ const Nav = (props) => {
 
   const logout = () => {
     axios.get('/auth/logout')
-      .then(res => {
-        updateUser(null)
-        history.push('/')
+    .then(res => {
+      history.push('/')
+      updateUser(null)
       })
       .catch(err => console.log(err))
   }
@@ -97,6 +98,6 @@ const mapStateToProps = (stateRedux) => {
   return {
     user: stateRedux.userReducer.user
   }
-}
+};
 
-export default connect(mapStateToProps, {updateUser})(Nav)
+export default withRouter(connect(mapStateToProps, {updateUser})(Nav));

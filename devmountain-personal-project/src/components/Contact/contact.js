@@ -1,10 +1,5 @@
 import React from "react";
-// import {
-//   FaFacebookSquare,
-//   FaTwitterSquare,
-//   FaInstagram,
-//   FaYoutube,
-// } from 'react-icons/fa'
+import {withRouter} from 'react-router';
 import "./contact.scss";
 
 const contact = () => {
@@ -61,4 +56,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default withRouter(contact);
