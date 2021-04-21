@@ -1,9 +1,10 @@
-require('dotenv').config();
+require('dotenv').config({path: __dirname + '/../.env'});
 const express = require('express');
 const session = require('express-session');
 const user = require('./controllers/userCtrl')
 // const program = require('./controllers/programCtrl')
 const massive = require('massive')
+const path = require('path')
 
 
 const {SERVER_PORT, SESSION_SECRET, CONNECTION_STRING} = process.env;
@@ -34,6 +35,11 @@ app.put('/auth/userUpdate', user.userUpdate)
 
 // app.post('/api/programs', program.newUserProgram)
 // app.delete('/api/programs/:id',program.deleteUserProgram)
+
+app.use(express.static(__dirname + '/../build'))
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../build/index.html'))
+})
 
 massive({
     connectionString: CONNECTION_STRING,
