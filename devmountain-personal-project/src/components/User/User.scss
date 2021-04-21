@@ -20,12 +20,14 @@
 		margin: 12.5% auto;
 	}
 	@media (max-width: $laptopSm){
-		height: 440px;
-    width: 300px;
 		margin: 15% auto;
 	}
 	@media (max-width: $tablet){
 		margin: 20% auto;
+	}
+	@media (max-width: $phone){
+		height: 440px;
+    width: 300px;
 	}
 
 	.coverphoto {
@@ -123,9 +125,12 @@
 				}
 
 				button {
-					align-self: center;
-					width: 30%;
-					margin-top: 5px;
+
+					@media (max-width: $phone){
+						align-self: center;
+						width: 30%;
+						margin-top: 5px;
+					}
 				}
 			}
 

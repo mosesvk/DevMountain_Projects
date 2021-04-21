@@ -47,7 +47,7 @@ const Nav = (props) => {
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} logout={logout} />
       <div className="nav">
         <div className="nav-container">
           <a className="nav-logo" href="/">
