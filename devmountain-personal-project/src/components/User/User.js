@@ -41,7 +41,8 @@ const User = (props) => {
   }
 
 
-  console.log(userInfo)
+  // console.log(userInfo)
+
   return (
     <div className="user-container" >
       <div className="portfoliocard">
@@ -56,7 +57,7 @@ const User = (props) => {
         <div className="right_col">
           <h2 className="name">{user?.first_name} {user?.last_name}</h2>
           <ul className="contact_information">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} editView={editView} onClick={() => setEditView(editView)}>
               <input name="first_name" placeholder={user?.first_name} onChange={handleChange}></input>
               <input name="last_name" placeholder={user?.last_name} onChange={handleChange}></input>
               <input name="email" placeholder={user?.email} onChange={handleChange}></input>
