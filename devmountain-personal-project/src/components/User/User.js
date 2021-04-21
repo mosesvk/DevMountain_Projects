@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {connect} from 'react-redux'
 import {updateUser} from '../../redux/userReducer'
+import axios from 'axios'
 import './User.scss'
 
 const User = (props) => {
@@ -29,9 +30,20 @@ const User = (props) => {
     setUserInfo({...userInfo, [e.target.name]:e.target.value})
   }
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    axios.put('/auth/userUpdate', userInfo)
+      .then(res => {
+        console.log('Hey this is the handleSubmit',res.data)
+        updateUser(res.data)
+      })
+      .catch(err => console.log(err))
+  }
+
+
   console.log(userInfo)
   return (
-    <div className="user-container">
+    <div className="user-container" >
       <div className="portfoliocard">
         <div className="coverphoto"></div>
         <div className="profile_picture"></div>
@@ -44,11 +56,12 @@ const User = (props) => {
         <div className="right_col">
           <h2 className="name">{user?.first_name} {user?.last_name}</h2>
           <ul className="contact_information">
-            <form>
+            <form onSubmit={handleSubmit}>
               <input name="first_name" placeholder={user?.first_name} onChange={handleChange}></input>
               <input name="last_name" placeholder={user?.last_name} onChange={handleChange}></input>
               <input name="email" placeholder={user?.email} onChange={handleChange}></input>
               <input name="username" placeholder={user?.username} onChange={handleChange}></input>
+              <button type="submit">Submit</button>
             </form>
             <li className="firstName">{user?.first_name}</li>
             <li className="lastName">{user?.last_name}</li>

@@ -1,4 +1,5 @@
 const bcrypt = require('bcryptjs');
+// const { updateUser } = require('../../src/redux/userReducer');
 
 module.exports = {
   login: async(req, res) => {
@@ -41,5 +42,14 @@ module.exports = {
     const { user } = req.session;
     if (user) return res.status(200).send(user);
     else return res.sendStatus(401)
+  },
+  userUpdate: async(req, res) => {
+    const {user} = req.session; 
+    const {username, firstName, lastName, email} = req.body;
+    const db = req.app.get('db');
+    const [updatedUser] =  await db.update_user({username, firstName, lastName, email, userId:user.user_id})
+    delete updatedUser.password
+    req.session.user = updatedUser
+    return res.status(200).send(req.session.user)
   }
 }

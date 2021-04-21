@@ -24,6 +24,7 @@ app.post('/auth/login', user.login)
 app.post('/auth/register', user.register)
 app.get('/auth/logout', user.logout)
 app.get('/auth/getUser', user.userData) 
+app.put('/auth/userUpdate', user.userUpdate)
 // app.delete('/auth/:id', user.deleteUser)
 
 // app.use((req, res, next) => {
