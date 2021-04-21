@@ -40,7 +40,6 @@ const User = (props) => {
       .catch(err => console.log(err))
   }
 
-
   // console.log(userInfo)
 
   return (
@@ -57,17 +56,31 @@ const User = (props) => {
         <div className="right_col">
           <h2 className="name">{user?.first_name} {user?.last_name}</h2>
           <ul className="contact_information">
-            <form onSubmit={handleSubmit} editView={editView} onClick={() => setEditView(editView)}>
-              <input name="first_name" placeholder={user?.first_name} onChange={handleChange}></input>
-              <input name="last_name" placeholder={user?.last_name} onChange={handleChange}></input>
-              <input name="email" placeholder={user?.email} onChange={handleChange}></input>
-              <input name="username" placeholder={user?.username} onChange={handleChange}></input>
-              <button type="submit">Submit</button>
-            </form>
-            <li className="firstName">{user?.first_name}</li>
-            <li className="lastName">{user?.last_name}</li>
-            <li className="mail">{user?.email}</li>
-            <li className="username">{user?.username}</li>
+            {
+              editView ? (
+                <form onSubmit={handleSubmit} onClick={() => setEditView(!editView)}>
+                  <input name="first_name" placeholder={user?.first_name} onChange={handleChange}></input>
+                  <input name="last_name" placeholder={user?.last_name} onChange={handleChange}></input>
+                  <input name="email" placeholder={user?.email} onChange={handleChange}></input>
+                  <input name="username" placeholder={user?.username} onChange={handleChange}></input>
+                  <button type="submit">Submit</button>
+                </form>
+              ) : (
+                null
+              )
+            }
+            {
+              editView ? (
+                null
+              ) : (
+                <>
+                  <li className="firstName">{user?.first_name}</li>
+                  <li className="lastName">{user?.last_name}</li>
+                  <li className="mail">{user?.email}</li>
+                  <li className="username">{user?.username}</li>
+                </>
+              )
+            }
           </ul>
         </div>
       </div>
