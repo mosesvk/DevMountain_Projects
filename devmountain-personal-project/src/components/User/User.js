@@ -31,7 +31,10 @@ const User = (props) => {
   }
 
   const handleSubmit = (e) => {
+    const {updateUser} = props
     e.preventDefault()
+    setEditView(!editView)
+    console.log(userInfo)
     axios.put('/auth/userUpdate', userInfo)
       .then(res => {
         console.log('Hey this is the handleSubmit',res.data)
@@ -40,7 +43,7 @@ const User = (props) => {
       .catch(err => console.log(err))
   }
 
-  // console.log(userInfo)
+  console.log(props)
 
   return (
     <div className="user-container" >
@@ -58,7 +61,7 @@ const User = (props) => {
           <ul className="contact_information">
             {
               editView ? (
-                <form onSubmit={handleSubmit} onClick={() => setEditView(!editView)}>
+                <form onSubmit={handleSubmit}>
                   <input name="first_name" placeholder={user?.first_name} onChange={handleChange}></input>
                   <input name="last_name" placeholder={user?.last_name} onChange={handleChange}></input>
                   <input name="email" placeholder={user?.email} onChange={handleChange}></input>

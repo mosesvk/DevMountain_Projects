@@ -45,9 +45,11 @@ module.exports = {
   },
   userUpdate: async(req, res) => {
     const {user} = req.session; 
-    const {username, firstName, lastName, email} = req.body;
+    const {username, first_name, last_name, email} = req.body;
+    console.log(req.body) 
     const db = req.app.get('db');
-    const [updatedUser] =  await db.update_user({username, firstName, lastName, email, userId:user.user_id})
+    const [updatedUser] =  await db.update_user({username, first_name, last_name, email, userId:user.user_id})
+    // console.log(updatedUser)
     delete updatedUser.password
     req.session.user = updatedUser
     return res.status(200).send(req.session.user)

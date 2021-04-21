@@ -16,7 +16,7 @@ const Sidebar = (props) => {
   
   const {toggle, isOpen, user, logout} = props
 
-  console.log(props)
+  // console.log(props)
 
   return (
     <SidebarContainer isOpen={isOpen} toggle={toggle}>
