@@ -48,7 +48,7 @@ const User = (props) => {
         <div className="coverphoto"></div>
         <div className="profile_picture"></div>
         <div className="left_col">
-          <div className="followers">
+          <div className="user_info">
             <h1>User Profile</h1>
             <button onClick={() => setEditView(!editView)}>Edit Info</button>
           </div>
