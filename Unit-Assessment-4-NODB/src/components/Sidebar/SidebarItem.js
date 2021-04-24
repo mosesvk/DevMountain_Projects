@@ -12,7 +12,7 @@ export default class SidebarItem extends Component {
   };
 
   handleChange = (e) => {
-    this.setState({quantityInput: e.target.value})
+    this.setState({quantityInput: e.target.value} )
   }
 
   render() {
